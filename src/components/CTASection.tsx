@@ -8,7 +8,7 @@ type CTASectionProps = {
 
 export default function CTASection({
   title = 'Need a Residential Electrician in Boca Raton?',
-  description = 'Call now and we will connect you with an independent local residential electrical provider. Fast, free, and no obligation.',
+  description = 'Call now to speak with an expert in-house electrician. Fast, free, and no obligation.',
 }: CTASectionProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-800 to-primary-950 py-16 md:py-20">

@@ -10,7 +10,7 @@ export default function ServiceAreasSection() {
           <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Service Areas</span>
           <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Residential Electrical Connections Across South Florida</h2>
           <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-            We connect homeowners with independent local residential electrical providers serving Boca Raton and surrounding communities.
+            We provide homeowners with expert in-house electricians serving Boca Raton and surrounding communities.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function ServiceAreasSection() {
 
         <div className="mt-10 text-center">
           <p className="text-neutral-600 mb-4">
-            Don&apos;t see your city? Call us and we will try to connect you with a provider in your area.
+            Don&apos;t see your city? Call us and we will try to connect you with our team in your area.
           </p>
           <a href={site.phoneRaw} className="btn-call">
             <Phone className="h-4 w-4" />

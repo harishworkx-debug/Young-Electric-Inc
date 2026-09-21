@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="font-display font-bold text-lg text-white">Young Electric Inc</span>
             </Link>
             <p className="text-sm text-neutral-400 leading-relaxed mb-4">
-              A lead-generation service connecting Boca Raton and South Florida homeowners with independent local residential electrical providers.
+              A professional electrical contractor serving Boca Raton and South Florida homeowners with reliable residential electrical services.
             </p>
             <a href={site.phoneRaw} className="inline-flex items-center gap-2 text-success-400 font-semibold hover:text-success-300 transition-colors">
               <Phone className="h-4 w-4" />
@@ -82,7 +82,7 @@ export default function Footer() {
           <div className="flex items-start gap-3 p-4 bg-neutral-800/50 rounded-lg mb-6">
             <AlertCircle className="h-5 w-5 text-warning-400 flex-shrink-0 mt-0.5" />
             <p className="text-xs text-neutral-400 leading-relaxed">
-              <strong className="text-neutral-300">Lead-Generation Disclaimer:</strong> Young Electric Inc is a lead-generation service that connects homeowners with independent local residential electrical providers. We are not an electrical contractor, do not employ electricians, and do not perform electrical work. We do not guarantee availability, pricing, or the quality of work performed by any provider. Any service agreements, warranties, or guarantees are between the homeowner and the independent provider. We facilitate connections for residential electrical services only and do not offer commercial, industrial, office, retail, restaurant, warehouse, or business electrical services.
+              <strong className="text-neutral-300">Service Guarantee:</strong> Young Electric Inc is a licensed and insured electrical contractor providing high-quality residential electrical services. We take pride in our workmanship and guarantee the quality of our services. Our team is dedicated to safety and customer satisfaction. We focus exclusively on residential properties, ensuring your home receives the specialized care it deserves.
             </p>
           </div>
 

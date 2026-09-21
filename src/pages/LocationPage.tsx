@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, ArrowRight, CheckCircle2, Zap } from 'lucide-react';
+import { Phone, MapPin, Zap } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
@@ -21,14 +21,14 @@ export default function LocationPage({
     ? `Electrician ${location.name}, ${location.stateAbbr} | Residential Electrical`
     : `Electrical Services ${location.name}, ${location.stateAbbr} | Residential`;
   const metaDescription = isElectrician
-    ? `Connect with a residential electrician in ${location.name}, ${location.stateAbbr}. We connect homeowners with independent local electrical providers. Call ${site.phone}.`
-    : `Residential electrical services in ${location.name}, ${location.stateAbbr}. Connect with an independent local home electrical provider. Call ${site.phone}.`;
+    ? `Hire a residential electrician in ${location.name}, ${location.stateAbbr}. We provide homeowners with expert in-house electricians. Call ${site.phone}.`
+    : `Residential electrical services in ${location.name}, ${location.stateAbbr}. Hire an expert in-house electrician. Call ${site.phone}.`;
 
   const localFaqs = [
-    { q: `Do you connect homeowners with electricians in ${location.name}, ${location.stateAbbr}?`, a: `Yes. Young Electric Inc connects homeowners in ${location.name} and surrounding areas with independent local residential electrical providers. Call ${site.phone} to be connected.` },
-    { q: `Is this a residential-only service?`, a: `Yes. We exclusively connect homeowners with residential electrical providers. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical services.` },
-    { q: `Is Young Electric Inc an electrical contractor?`, a: `No. Young Electric Inc is a lead-generation service. We connect you with independent local residential electrical providers who perform the work. We do not employ electricians or perform electrical work ourselves.` },
-    { q: `What electrical services can I request in ${location.name}?`, a: `We connect homeowners with providers who handle residential electrical repair, outlet and switch repair, lighting installation, panel service, wiring, ceiling fan installation, EV charger installation, inspections, surge protection, and generator electrical service. Note: individual service detail pages are available for Boca Raton, our main service location.` },
+    { q: `Do you connect homeowners with electricians in ${location.name}, ${location.stateAbbr}?`, a: `Yes. Young Electric Inc connects homeowners in ${location.name} and surrounding areas with expert in-house electricians. Call ${site.phone} to be connected.` },
+    { q: `Is this a residential-only service?`, a: `Yes. We exclusively connect homeowners with residential electrical team members. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical services.` },
+    { q: `Are you a licensed and insured electrical contractor?`, a: `Yes, Young Electric Inc is a fully licensed and insured electrical contractor serving the local area with professional residential electrical services.` },
+    { q: `What electrical services can I request in ${location.name}?`, a: `We provide homeowners with team members who handle residential electrical repair, outlet and switch repair, lighting installation, panel service, wiring, ceiling fan installation, EV charger installation, inspections, surge protection, and generator electrical service. Note: individual service detail pages are available for Boca Raton, our main service location.` },
   ];
 
   const faqSchema = {
@@ -74,7 +74,7 @@ export default function LocationPage({
               {h1}
             </h1>
             <p className="text-lg text-neutral-200 mb-8 leading-relaxed">
-              Connect with an independent local residential electrical provider serving {location.name}, {location.stateAbbr} and nearby neighborhoods. {isElectrician ? 'Find available home electricians for repairs, installations, and upgrades.' : 'Residential electrical service for everything from outlet repair to panel upgrades.'}
+              Hire an expert in-house electrician serving {location.name}, {location.stateAbbr} and nearby neighborhoods. {isElectrician ? 'Find available home electricians for repairs, installations, and upgrades.' : 'Residential electrical service for everything from outlet repair to panel upgrades.'}
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a href={site.phoneRaw} className="btn-call text-lg px-8 py-4 w-full sm:w-auto">
@@ -97,12 +97,12 @@ export default function LocationPage({
               <h2>{isElectrician ? `Residential Electrician in ${location.name}, ${location.stateAbbr}` : `Residential Electrical Services in ${location.name}, ${location.stateAbbr}`}</h2>
               <p>{location.description}</p>
               <p>
-                Young Electric Inc is a lead-generation service that connects homeowners in {location.name} with independent local residential electrical providers. We are not an electrical contractor and do not perform electrical work ourselves. When you call {site.phone}, we connect you with an available local provider who handles all service, scheduling, and pricing directly with you.
+                Young Electric Inc is your trusted local electrical contractor serving homeowners in {location.name}. Our team of skilled electricians provides top-quality residential electrical services. When you call {site.phone}, you speak directly with our team to schedule service, get pricing, and have your electrical needs resolved efficiently.
               </p>
 
               <h3>Residential Electrical Help Available in {location.name}</h3>
               <p>
-                We connect {location.name} homeowners with local providers who handle a full range of home electrical needs, including:
+                We connect {location.name} homeowners with local team members who handle a full range of home electrical needs, including:
               </p>
               <ul>
                 {services.map((s) => (
@@ -115,7 +115,7 @@ export default function LocationPage({
 
               <h3>Serving {location.name} and Nearby Neighborhoods</h3>
               <p>
-                The providers we connect you with serve {location.name} and the surrounding area, including:
+                Our teams we provide you with serve {location.name} and the surrounding area, including:
               </p>
               <ul>
                 {location.nearbyAreas.map((area) => (
@@ -125,13 +125,13 @@ export default function LocationPage({
 
               <h3>Why Choose a Local Residential Provider?</h3>
               <p>
-                Connecting with a local residential electrical provider in {location.name} means working with someone who understands the homes, climate, and building practices common to {location.stateAbbr}. South Florida homes face unique electrical challenges — from lightning-induced power surges to humidity affecting outdoor wiring — and a local provider can recommend solutions that fit your specific situation.
+                Connecting with a local residential electrical team in {location.name} means working with someone who understands the homes, climate, and building practices common to {location.stateAbbr}. South Florida homes face unique electrical challenges — from lightning-induced power surges to humidity affecting outdoor wiring — and a local team can recommend solutions that fit your specific situation.
               </p>
 
               <div className="mt-6 p-6 bg-primary-50 rounded-xl border border-primary-100">
                 <h3 className="mb-3">Ready to Get Connected?</h3>
                 <p className="mb-4">
-                  Call {site.phone} now and we will connect you with an independent local residential electrical provider serving {location.name}, {location.stateAbbr}. No obligation.
+                  Call {site.phone} now and we will provide you with an expert in-house electrician serving {location.name}, {location.stateAbbr}. No obligation.
                 </p>
                 <a href={site.phoneRaw} className="btn-call">
                   <Phone className="h-4 w-4" />
@@ -145,7 +145,7 @@ export default function LocationPage({
                 <div className="card p-6 bg-primary-700 text-white">
                   <h3 className="font-display font-bold text-xl mb-3">Call Now</h3>
                   <p className="text-primary-100 text-sm mb-4">
-                    Connect with a local residential electrical provider in {location.name}.
+                    Hire a local residential electrical team in {location.name}.
                   </p>
                   <a href={site.phoneRaw} className="btn-accent w-full">
                     <Phone className="h-4 w-4" />
@@ -191,7 +191,7 @@ export default function LocationPage({
 
       <CTASection
         title={`Need an Electrician in ${location.name}?`}
-        description={`Call now to be connected with an independent local residential electrical provider serving ${location.name}, ${location.stateAbbr}.`}
+        description={`Call now to speak with an expert in-house electrician serving ${location.name}, ${location.stateAbbr}.`}
       />
 
       <FAQSection faqs={localFaqs} />

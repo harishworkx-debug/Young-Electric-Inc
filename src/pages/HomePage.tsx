@@ -21,7 +21,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Residential Electrical Services',
-  provider: {
+  team: {
     '@type': 'LocalBusiness',
     name: site.name,
     telephone: site.phone,
@@ -42,7 +42,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Residential Electrician Boca Raton, FL | Young Electric Inc"
-        description="Connect with a local residential electrician in Boca Raton, FL. We connect homeowners with independent local electrical providers for repairs, installations, panel upgrades & more. Call 561-470-1433."
+        description="Hire a local residential electrician in Boca Raton, FL. We provide homeowners with expert in-house electricians for repairs, installations, panel upgrades & more. Call 561-470-1433."
         canonicalPath="/"
         schema={[faqSchema, serviceSchema]}
       />
@@ -71,7 +71,7 @@ export default function HomePage() {
               Residential Electrician in <span className="text-accent-400">Boca Raton, FL</span>
             </h1>
             <p className="text-lg lg:text-xl text-neutral-200 mb-8 leading-relaxed max-w-2xl">
-              Connect with independent local residential electrical providers for safe, reliable home electrical service. From repairs to panel upgrades, lighting installation to EV chargers — we help you find available local professionals.
+              Hire expert in-house electricians for safe, reliable home electrical service. From repairs to panel upgrades, lighting installation to EV chargers — we help you find available local professionals.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
@@ -140,19 +140,19 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  Young Electric Inc is a lead-generation service that connects homeowners in Boca Raton and surrounding South Florida communities with independent local residential electrical providers. We are not an electrical contractor — we help you find and connect with available local professionals who handle home electrical work.
+                  Young Electric Inc is a premier electrical contractor serving homeowners in Boca Raton and surrounding South Florida communities. We provide professional, reliable, and high-quality residential electrical services. Our experienced team is ready to handle all your home electrical needs.
                 </p>
                 <p>
-                  Whether you need a simple outlet repair, a full panel upgrade, or an EV charger installed in your garage, one call connects you with a local provider who can help. You speak directly with the provider, get answers to your questions, and decide whether to schedule service. There is no obligation from the initial connection.
+                  Whether you need a simple outlet repair, a full panel upgrade, or an EV charger installed in your garage, one call connects you with a local team who can help. You speak directly with our team, get answers to your questions, and decide whether to schedule service. There is no obligation from the initial connection.
                 </p>
                 <p>
-                  We focus exclusively on residential electrical services. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical work. If you have a home electrical need in Boca Raton or nearby, we are here to help you find the right local provider.
+                  We focus exclusively on residential electrical services. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical work. If you have a home electrical need in Boca Raton or nearby, we are here to help you find the right local team.
                 </p>
               </div>
 
               <div className="mt-8 space-y-3">
                 {[
-                  'Direct connection with independent local providers',
+                  'Direct connection with expert in-house electricians',
                   'Residential electrical services only',
                   'No obligation from the initial call',
                   'Serving Boca Raton and surrounding South Florida communities',
@@ -201,7 +201,7 @@ export default function HomePage() {
             <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Our Services</span>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Residential Electrical Services in Boca Raton</h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              We connect homeowners with local residential electrical providers who handle a full range of home electrical needs.
+              We provide homeowners with local residential electrical team members who handle a full range of home electrical needs.
             </p>
           </div>
 
@@ -235,15 +235,15 @@ export default function HomePage() {
             <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Simple Process</span>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">How It Works</h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              Getting connected with a local residential electrical provider is quick and straightforward.
+              Getting connected with a local residential electrical team is quick and straightforward.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { num: '1', title: 'Call Us', desc: 'Dial 561-470-1433 and tell us what residential electrical help you need.', icon: Phone },
-              { num: '2', title: 'Get Connected', desc: 'We connect you with an available independent local residential electrical provider.', icon: Zap },
-              { num: '3', title: 'Get Help', desc: 'The provider discusses your needs, gives you a quote, and schedules service if you choose.', icon: CheckCircle2 },
+              { num: '2', title: 'Get Connected', desc: 'We provide you with an available expert in-house electrician.', icon: Zap },
+              { num: '3', title: 'Get Help', desc: 'Our team discusses your needs, gives you a quote, and schedules service if you choose.', icon: CheckCircle2 },
             ].map((step) => (
               <div key={step.num} className="text-center relative">
                 <div className="relative inline-flex">
@@ -290,10 +290,10 @@ export default function HomePage() {
                   Boca Raton is one of South Florida&apos;s most desirable residential communities, with homes ranging from mid-century ranches to modern luxury estates. These homes have diverse electrical needs — from updating 1960s-era panels and wiring to installing the latest EV chargers and smart home lighting.
                 </p>
                 <p>
-                  Florida&apos;s climate adds unique challenges for home electrical systems. Frequent thunderstorms create power surges that can damage electronics, hurricane season demands reliable backup power options, and high humidity affects outdoor wiring and outlets. A local residential electrical provider understands these conditions and can recommend the right solutions for your home.
+                  Florida&apos;s climate adds unique challenges for home electrical systems. Frequent thunderstorms create power surges that can damage electronics, hurricane season demands reliable backup power options, and high humidity affects outdoor wiring and outlets. A local residential electrical team understands these conditions and can recommend the right solutions for your home.
                 </p>
                 <p>
-                  Whether you live in Boca Raton proper or nearby communities like Boca Del Mar, Mission Bay, or West Boca, connecting with a local residential electrical provider ensures your home gets the attention it needs from someone who knows the area.
+                  Whether you live in Boca Raton proper or nearby communities like Boca Del Mar, Mission Bay, or West Boca, connecting with a local residential electrical team ensures your home gets the attention it needs from someone who knows the area.
                 </p>
               </div>
 
@@ -320,7 +320,7 @@ export default function HomePage() {
           <div className="flex items-start gap-3">
             <AlertCircle className="h-5 w-5 text-warning-600 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-neutral-700 leading-relaxed">
-              <strong>Lead-Generation Service:</strong> Young Electric Inc connects homeowners with independent local residential electrical providers. We are not an electrical contractor and do not perform electrical work. Service agreements are between the homeowner and the provider. We serve residential properties only.
+              <strong>Professional Electrical Services:</strong> Young Electric Inc provides top-tier residential electrical services. We are a dedicated electrical contractor focused on safety, quality, and customer satisfaction. All work is performed by our skilled professionals to meet your home's needs.
             </p>
           </div>
         </div>

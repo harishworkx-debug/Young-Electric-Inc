@@ -58,7 +58,12 @@ export default function Header() {
               </Link>
 
               {/* Services dropdown */}
-              <div ref={servicesRef} className="relative">
+              <div 
+                ref={servicesRef} 
+                className="relative"
+                onMouseEnter={() => setServicesDropdown(true)}
+                onMouseLeave={() => setServicesDropdown(false)}
+              >
                 <button
                   onClick={() => { setServicesDropdown(!servicesDropdown); setAreasDropdown(false); }}
                   className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
@@ -92,7 +97,12 @@ export default function Header() {
               </div>
 
               {/* Service Areas dropdown */}
-              <div ref={areasRef} className="relative">
+              <div 
+                ref={areasRef} 
+                className="relative"
+                onMouseEnter={() => setAreasDropdown(true)}
+                onMouseLeave={() => setAreasDropdown(false)}
+              >
                 <button
                   onClick={() => { setAreasDropdown(!areasDropdown); setServicesDropdown(false); }}
                   className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
@@ -124,10 +134,10 @@ export default function Header() {
                 )}
               </div>
 
-              <Link to="/#about" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
+              <Link to="/about" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
                 About
               </Link>
-              <Link to="/#faqs" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
+              <Link to="/faqs" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
                 FAQs
               </Link>
               <Link to="/contact" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
@@ -215,14 +225,14 @@ export default function Header() {
               )}
 
               <Link
-                to="/#about"
+                to="/about"
                 onClick={() => setMobileOpen(false)}
                 className="block px-4 py-3 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
               >
                 About
               </Link>
               <Link
-                to="/#faqs"
+                to="/faqs"
                 onClick={() => setMobileOpen(false)}
                 className="block px-4 py-3 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
               >

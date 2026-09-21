@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Home, ArrowRight } from 'lucide-react';
+import { Phone, Home } from 'lucide-react';
 import SEO from '@/components/SEO';
 import { site } from '@/data/siteData';
 
@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
       <SEO
         title="Page Not Found | Young Electric Inc"
-        description="The page you are looking for could not be found. Call 561-470-1433 to connect with a residential electrician in Boca Raton, FL."
+        description="The page you are looking for could not be found. Call 561-470-1433 to hire a residential electrician in Boca Raton, FL."
         canonicalPath="/404"
       />
 

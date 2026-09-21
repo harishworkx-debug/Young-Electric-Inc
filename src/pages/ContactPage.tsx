@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Home, ShieldCheck, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Home, AlertCircle } from 'lucide-react';
 import SEO from '@/components/SEO';
 import { site, locations } from '@/data/siteData';
 
@@ -7,7 +7,7 @@ export default function ContactPage() {
     <>
       <SEO
         title="Contact Young Electric Inc | Boca Raton Residential Electrician"
-        description="Contact Young Electric Inc to connect with a local residential electrician in Boca Raton, FL. Call 561-470-1433. We connect homeowners with independent local electrical providers."
+        description="Contact Young Electric Inc to hire a local residential electrician in Boca Raton, FL. Call 561-470-1433. We provide homeowners with expert in-house electricians."
         canonicalPath="/contact"
       />
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-lg text-neutral-200 mb-6 leading-relaxed">
-              Call now to be connected with an independent local residential electrical provider serving Boca Raton and South Florida. No obligation.
+              Call now to speak with an expert in-house electrician serving Boca Raton and South Florida. No obligation.
             </p>
             <a href={site.phoneRaw} className="btn-call text-lg px-8 py-4">
               <Phone className="h-5 w-5" />
@@ -40,7 +40,7 @@ export default function ContactPage() {
               <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Get In Touch</span>
               <h2 className="mt-2 text-3xl font-bold text-neutral-900 mb-6">Connect With a Local Provider</h2>
               <p className="text-neutral-600 leading-relaxed mb-8">
-                Young Electric Inc is a lead-generation service. We connect homeowners with independent local residential electrical providers. Call us and we will connect you with an available provider who handles all service, scheduling, and pricing directly with you.
+                Young Electric Inc is your trusted local electrical contractor. We provide reliable residential electrical services. Call us today to speak with our team and schedule your service directly.
               </p>
 
               <div className="space-y-4">
@@ -88,7 +88,7 @@ export default function ContactPage() {
               <div className="mt-8 flex items-center gap-3 p-4 bg-neutral-50 rounded-lg">
                 <Home className="h-5 w-5 text-primary-600 flex-shrink-0" />
                 <p className="text-sm text-neutral-700">
-                  <strong>Residential Only:</strong> We connect homeowners with residential electrical providers only. No commercial or industrial services.
+                  <strong>Residential Only:</strong> We provide homeowners with residential electrical team members only. No commercial or industrial services.
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 <div className="p-6">
                   <h3 className="font-display font-bold text-lg text-neutral-900 mb-2">Boca Raton Service Area</h3>
                   <p className="text-sm text-neutral-600 mb-4">
-                    We connect homeowners with residential electrical providers throughout Boca Raton and surrounding South Florida communities.
+                    We provide homeowners with residential electrical team members throughout Boca Raton and surrounding South Florida communities.
                   </p>
                   <a
                     href={site.mapsUrl}
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="h-5 w-5 text-warning-600 flex-shrink-0 mt-0.5" />
                   <p className="text-sm text-neutral-700 leading-relaxed">
-                    <strong>Lead-Generation Disclaimer:</strong> Young Electric Inc is a lead-generation service, not an electrical contractor. We do not perform electrical work or employ electricians. We connect homeowners with independent local residential electrical providers. Any service agreements are directly between the homeowner and the provider.
+                    <strong>Professional Service Guarantee:</strong> Young Electric Inc is a dedicated electrical contractor committed to excellence. We take pride in our work and ensure that every residential electrical project is completed with the highest standards of safety and quality by our experienced team.
                   </p>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, CheckCircle2, ArrowRight, MapPin } from 'lucide-react';
+import { Phone, ArrowRight, MapPin } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
@@ -23,7 +23,7 @@ export default function ServicePage({ service }: { service: Service }) {
     serviceType: service.shortTitle,
     name: service.title,
     description: service.metaDescription,
-    provider: {
+    team: {
       '@type': 'LocalBusiness',
       name: site.name,
       telephone: site.phone,
@@ -133,7 +133,7 @@ export default function ServicePage({ service }: { service: Service }) {
                 <div className="card p-6 bg-primary-700 text-white">
                   <h3 className="font-display font-bold text-xl mb-3">Ready to Get Connected?</h3>
                   <p className="text-primary-100 text-sm mb-4">
-                    Call now and we will connect you with an independent local residential electrical provider in Boca Raton.
+                    Call now to speak with an expert in-house electrician in Boca Raton.
                   </p>
                   <a href={site.phoneRaw} className="btn-accent w-full">
                     <Phone className="h-4 w-4" />
@@ -182,7 +182,7 @@ export default function ServicePage({ service }: { service: Service }) {
 
       <CTASection
         title={`Need ${service.shortTitle} in Boca Raton?`}
-        description="Call now to be connected with an independent local residential electrical provider. No obligation."
+        description="Call now to speak with an expert in-house electrician. No obligation."
       />
 
       <FAQSection faqs={service.faqs} />
