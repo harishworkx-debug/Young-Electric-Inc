@@ -1,0 +1,16 @@
+{
+  "name": "Young Electric Inc - Residential Electrician Boca Raton, FL",
+  "short_name": "Young Electric Inc",
+  "description": "Connect with local residential electrical providers in Boca Raton, FL and South Florida.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1c66f5",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

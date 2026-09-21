@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply font-sans text-neutral-700 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500 shadow-lg shadow-primary-600/20;
+  }
+  .btn-accent {
+    @apply btn bg-accent-400 text-neutral-900 hover:bg-accent-300 focus:ring-accent-400 shadow-lg shadow-accent-400/30;
+  }
+  .btn-call {
+    @apply btn bg-success-500 text-white hover:bg-success-600 focus:ring-success-500 shadow-lg shadow-success-500/30;
+  }
+  .btn-outline {
+    @apply btn border-2 border-neutral-300 text-neutral-700 hover:border-primary-500 hover:text-primary-600 focus:ring-primary-500;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-sm ring-1 ring-neutral-200/60 transition-all duration-300;
+  }
+  .card-hover {
+    @apply card hover:shadow-xl hover:ring-primary-200/60 hover:-translate-y-1;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .prose-content p {
+    @apply mb-4 leading-relaxed text-neutral-600;
+  }
+  .prose-content h2 {
+    @apply mb-4 text-2xl font-bold text-neutral-900;
+  }
+  .prose-content h3 {
+    @apply mb-3 text-xl font-bold text-neutral-900;
+  }
+  .prose-content ul {
+    @apply mb-4 space-y-2 pl-5;
+  }
+  .prose-content li {
+    @apply list-disc text-neutral-600;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(28, 102, 245, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(28, 102, 245, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
