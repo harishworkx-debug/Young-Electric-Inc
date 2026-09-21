@@ -72,26 +72,28 @@ export default function Header() {
                   <ChevronDown className={`h-4 w-4 transition-transform ${servicesDropdown ? 'rotate-180' : ''}`} />
                 </button>
                 {servicesDropdown && (
-                  <div className="absolute left-0 top-full mt-1 w-[640px] bg-white rounded-xl shadow-2xl ring-1 ring-neutral-200 p-4 grid grid-cols-2 gap-1 animate-slide-down">
-                    <div className="col-span-2 px-3 pb-2 mb-1 border-b border-neutral-100">
-                      <p className="text-sm font-bold text-neutral-900">Residential Electrical Services in Boca Raton, FL</p>
+                  <div className="absolute left-0 top-full pt-1 w-[640px] animate-slide-down">
+                    <div className="bg-white rounded-xl shadow-2xl ring-1 ring-neutral-200 p-4 grid grid-cols-2 gap-1">
+                      <div className="col-span-2 px-3 pb-2 mb-1 border-b border-neutral-100">
+                        <p className="text-sm font-bold text-neutral-900">Residential Electrical Services in Boca Raton, FL</p>
+                      </div>
+                      {services.map((s) => (
+                        <Link
+                          key={s.slug}
+                          to={`/${s.slug}`}
+                          onClick={() => setServicesDropdown(false)}
+                          className="flex items-start gap-3 px-3 py-2.5 rounded-lg hover:bg-primary-50 transition-colors group"
+                        >
+                          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-50 group-hover:bg-primary-100 transition-colors flex-shrink-0">
+                            <ServiceIcon name={s.icon} className="h-4 w-4 text-primary-600" />
+                          </div>
+                          <div>
+                            <p className="text-sm font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors">{s.shortTitle}</p>
+                            <p className="text-xs text-neutral-500 line-clamp-1">{s.title}</p>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
-                    {services.map((s) => (
-                      <Link
-                        key={s.slug}
-                        to={`/${s.slug}`}
-                        onClick={() => setServicesDropdown(false)}
-                        className="flex items-start gap-3 px-3 py-2.5 rounded-lg hover:bg-primary-50 transition-colors group"
-                      >
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-50 group-hover:bg-primary-100 transition-colors flex-shrink-0">
-                          <ServiceIcon name={s.icon} className="h-4 w-4 text-primary-600" />
-                        </div>
-                        <div>
-                          <p className="text-sm font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors">{s.shortTitle}</p>
-                          <p className="text-xs text-neutral-500 line-clamp-1">{s.title}</p>
-                        </div>
-                      </Link>
-                    ))}
                   </div>
                 )}
               </div>
@@ -111,24 +113,26 @@ export default function Header() {
                   <ChevronDown className={`h-4 w-4 transition-transform ${areasDropdown ? 'rotate-180' : ''}`} />
                 </button>
                 {areasDropdown && (
-                  <div className="absolute left-0 top-full mt-1 w-80 bg-white rounded-xl shadow-2xl ring-1 ring-neutral-200 p-4 animate-slide-down">
-                    <div className="px-3 pb-2 mb-1 border-b border-neutral-100">
-                      <p className="text-sm font-bold text-neutral-900">South Florida Service Areas</p>
-                    </div>
-                    <div className="max-h-[400px] overflow-y-auto">
-                      {locations.map((loc) => (
-                        <div key={loc.slug} className="py-1">
-                          <p className="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wider text-neutral-400">{loc.name}, {loc.stateAbbr}</p>
-                          <Link
-                            to={`/electrician-${loc.slug}`}
-                            onClick={() => setAreasDropdown(false)}
-                            className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-50 transition-colors text-sm text-neutral-700 hover:text-primary-600"
-                          >
-                            <MapPin className="h-3.5 w-3.5 text-primary-500" />
-                            Electrician {loc.name}, {loc.stateAbbr}
-                          </Link>
-                        </div>
-                      ))}
+                  <div className="absolute left-0 top-full pt-1 w-80 animate-slide-down">
+                    <div className="bg-white rounded-xl shadow-2xl ring-1 ring-neutral-200 p-4">
+                      <div className="px-3 pb-2 mb-1 border-b border-neutral-100">
+                        <p className="text-sm font-bold text-neutral-900">South Florida Service Areas</p>
+                      </div>
+                      <div className="max-h-[400px] overflow-y-auto">
+                        {locations.map((loc) => (
+                          <div key={loc.slug} className="py-1">
+                            <p className="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wider text-neutral-400">{loc.name}, {loc.stateAbbr}</p>
+                            <Link
+                              to={`/electrician-${loc.slug}`}
+                              onClick={() => setAreasDropdown(false)}
+                              className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-primary-50 transition-colors text-sm text-neutral-700 hover:text-primary-600"
+                            >
+                              <MapPin className="h-3.5 w-3.5 text-primary-500" />
+                              Electrician {loc.name}, {loc.stateAbbr}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
