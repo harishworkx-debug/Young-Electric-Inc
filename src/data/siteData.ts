@@ -9,7 +9,7 @@ export const site = {
   mainStateAbbr: 'FL',
   mapsUrl: 'https://maps.app.goo.gl/jyRiooFFE5S231r38',
   mapEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114420.61163989243!2d-80.2016935!3d26.3730385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9e4e7a3a6a94b%3A0x4f10f1e6e7e7b4e0!2sBoca%20Raton%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13504577.386925368!2d-90.37067053397625!3d34.273645115519706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d91bd711ef5b33%3A0xc193b3ec8a30fede!2sYoung%20Electric%20Inc!5e0!3m2!1sen!2sin!4v1790006759620!5m2!1sen!2sin',
   rating: '5.0',
 };
 
