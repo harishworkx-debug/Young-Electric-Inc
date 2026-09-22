@@ -220,7 +220,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-sm text-neutral-600 leading-relaxed mb-4 line-clamp-3">{service.intro}</p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all">
-                  Learn More <ArrowRight className="h-4 w-4" />
+                  {service.shortTitle} <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
             ))}
