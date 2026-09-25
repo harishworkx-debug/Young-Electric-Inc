@@ -7,7 +7,7 @@ export default function ContactPage() {
     <>
       <SEO
         title="Contact Young Electric Inc | Boca Raton Residential Electrician"
-        description="Contact Young Electric Inc to hire a local residential electrician in Boca Raton, FL. Call 561-470-1433. We provide homeowners with expert in-house electricians."
+        description="Contact Young Electric Inc to hire a local residential electrician in Boca Raton, FL. Call 561-363-0946. We provide homeowners with expert in-house electricians."
         canonicalPath="/contact"
       />
 

@@ -46,7 +46,7 @@ const replacements = [
   ["though the provider we provide you with can give you", "though our team can give you"],
   ["We provide you with residential electrical providers who handle", "Our team handles"],
   ["Generator selection and purchase is directly with our dedicated team.", "Generator selection and purchase is handled directly by our dedicated team."],
-  ["When you call 561-470-1433, we provide you with an available residential electrical provider.", "When you call 561-470-1433, you speak with an available residential electrician."],
+  ["When you call 561-363-0946, we provide you with an available residential electrical provider.", "When you call 561-363-0946, you speak with an available residential electrician."],
   ["availability depends on the time of your call and provider schedules.", "availability depends on the time of your call and our schedule."],
   ["The provider handles", "Our team handles"],
   ["That provider discusses", "Our team discusses"],

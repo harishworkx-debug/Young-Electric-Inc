@@ -18,48 +18,48 @@ const replacements = [
     `Yes. Young Electric Inc is a fully licensed and insured electrical contractor. Our in-house team performs all electrical work. When you call us, you speak directly with our team who handles all service, scheduling, and pricing directly with you.`
   ],
   [
-    `Young Electric Inc is a lead-generation service, not an electrical contractor. When you call 561-470-1433, we connect you with an independent local provider who handles residential electrical repairs in Boca Raton. The provider discusses your situation, schedules a visit if needed, and handles all work and pricing directly with you.`,
-    `Young Electric Inc is a trusted local electrical contractor. When you call 561-470-1433, you reach our dedicated team who handles residential electrical repairs in Boca Raton. We will discuss your situation, schedule a visit, and provide clear pricing directly to you.`
+    `Young Electric Inc is a lead-generation service, not an electrical contractor. When you call 561-363-0946, we connect you with an independent local provider who handles residential electrical repairs in Boca Raton. The provider discusses your situation, schedules a visit if needed, and handles all work and pricing directly with you.`,
+    `Young Electric Inc is a trusted local electrical contractor. When you call 561-363-0946, you reach our dedicated team who handles residential electrical repairs in Boca Raton. We will discuss your situation, schedule a visit, and provide clear pricing directly to you.`
   ],
   [
     `No. Young Electric Inc is a lead-generation service. We connect you with an independent local residential electrical provider who performs the work.`,
     `Yes. We are the electrical contractor doing the repair. Our experienced team performs all the work to ensure the highest quality standards.`
   ],
   [
-    `Call 561-470-1433 and we connect you with an independent local residential electrical provider serving Boca Raton. The provider handles all scheduling, repairs, and pricing directly with you. Young Electric Inc is a lead-generation service and does not perform electrical work.`,
-    `Call 561-470-1433 to speak with our team at Young Electric Inc. We handle all scheduling, repairs, and pricing directly with you. We are a dedicated electrical contractor committed to quality.`
+    `Call 561-363-0946 and we connect you with an independent local residential electrical provider serving Boca Raton. The provider handles all scheduling, repairs, and pricing directly with you. Young Electric Inc is a lead-generation service and does not perform electrical work.`,
+    `Call 561-363-0946 to speak with our team at Young Electric Inc. We handle all scheduling, repairs, and pricing directly with you. We are a dedicated electrical contractor committed to quality.`
   ],
   [
     `Young Electric Inc is a lead-generation service. When you call, we connect you with an independent local residential electrical provider who handles switch repairs and replacements in Boca Raton homes. The provider manages all scheduling and pricing directly with you.`,
     `Young Electric Inc is your local electrical contractor. When you call, you reach our team who handles switch repairs and replacements in Boca Raton homes. We manage all scheduling and pricing directly with you.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. Call 561-470-1433 and we connect you with an independent local residential electrical provider serving Boca Raton. The provider handles all installation details and pricing directly with you.`,
-    `Young Electric Inc is a dedicated electrical contractor. Call 561-470-1433 to speak with our team serving Boca Raton. We handle all installation details and pricing directly with you.`
+    `Young Electric Inc is a lead-generation service. Call 561-363-0946 and we connect you with an independent local residential electrical provider serving Boca Raton. The provider handles all installation details and pricing directly with you.`,
+    `Young Electric Inc is a dedicated electrical contractor. Call 561-363-0946 to speak with our team serving Boca Raton. We handle all installation details and pricing directly with you.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. We connect you with an independent local residential electrical provider who handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-470-1433 to be connected.`,
-    `Young Electric Inc is a professional electrical contractor. Our team handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-470-1433 to schedule your service.`
+    `Young Electric Inc is a lead-generation service. We connect you with an independent local residential electrical provider who handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-363-0946 to be connected.`,
+    `Young Electric Inc is a professional electrical contractor. Our team handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-363-0946 to schedule your service.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. Call 561-470-1433 and we connect you with an independent local residential electrical provider for home wiring and rewiring in Boca Raton. The provider manages all work and pricing directly with you.`,
-    `Young Electric Inc is an experienced electrical contractor. Call 561-470-1433 to speak with our team for home wiring and rewiring in Boca Raton. We manage all work and pricing directly with you.`
+    `Young Electric Inc is a lead-generation service. Call 561-363-0946 and we connect you with an independent local residential electrical provider for home wiring and rewiring in Boca Raton. The provider manages all work and pricing directly with you.`,
+    `Young Electric Inc is an experienced electrical contractor. Call 561-363-0946 to speak with our team for home wiring and rewiring in Boca Raton. We manage all work and pricing directly with you.`
   ],
   [
-    `Call 561-470-1433 to be connected with an independent local residential electrical provider serving Boca Raton. The provider handles installation, scheduling, and pricing directly with you. Young Electric Inc is a lead-generation service and does not perform installations.`,
-    `Call 561-470-1433 to reach our team at Young Electric Inc serving Boca Raton. We handle all installation, scheduling, and pricing directly with you. We are a fully licensed electrical contractor.`
+    `Call 561-363-0946 to be connected with an independent local residential electrical provider serving Boca Raton. The provider handles installation, scheduling, and pricing directly with you. Young Electric Inc is a lead-generation service and does not perform installations.`,
+    `Call 561-363-0946 to reach our team at Young Electric Inc serving Boca Raton. We handle all installation, scheduling, and pricing directly with you. We are a fully licensed electrical contractor.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. Call 561-470-1433 and we connect you with an independent local residential electrical provider who installs home EV chargers in Boca Raton. The provider manages all installation and pricing directly with you.`,
-    `Young Electric Inc is your trusted electrical contractor. Call 561-470-1433 to speak with our team who installs home EV chargers in Boca Raton. We manage all installation and pricing directly with you.`
+    `Young Electric Inc is a lead-generation service. Call 561-363-0946 and we connect you with an independent local residential electrical provider who installs home EV chargers in Boca Raton. The provider manages all installation and pricing directly with you.`,
+    `Young Electric Inc is your trusted electrical contractor. Call 561-363-0946 to speak with our team who installs home EV chargers in Boca Raton. We manage all installation and pricing directly with you.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. Call 561-470-1433 and we connect you with an independent local residential electrical provider who performs home electrical inspections in Boca Raton. The provider handles all scheduling and pricing directly with you.`,
-    `Young Electric Inc is a reliable electrical contractor. Call 561-470-1433 to reach our team who performs home electrical inspections in Boca Raton. We handle all scheduling and pricing directly with you.`
+    `Young Electric Inc is a lead-generation service. Call 561-363-0946 and we connect you with an independent local residential electrical provider who performs home electrical inspections in Boca Raton. The provider handles all scheduling and pricing directly with you.`,
+    `Young Electric Inc is a reliable electrical contractor. Call 561-363-0946 to reach our team who performs home electrical inspections in Boca Raton. We handle all scheduling and pricing directly with you.`
   ],
   [
-    `Young Electric Inc is a lead-generation service. Call 561-470-1433 and we connect you with an independent local residential electrical provider who handles generator electrical service in Boca Raton homes. The provider manages all work and pricing directly with you.`,
-    `Young Electric Inc is an expert electrical contractor. Call 561-470-1433 to speak with our team who handles generator electrical service in Boca Raton homes. We manage all work and pricing directly with you.`
+    `Young Electric Inc is a lead-generation service. Call 561-363-0946 and we connect you with an independent local residential electrical provider who handles generator electrical service in Boca Raton homes. The provider manages all work and pricing directly with you.`,
+    `Young Electric Inc is an expert electrical contractor. Call 561-363-0946 to speak with our team who handles generator electrical service in Boca Raton homes. We manage all work and pricing directly with you.`
   ],
   [
     `No. Young Electric Inc is a lead-generation service and does not perform or warranty electrical work. Any guarantees or warranties would come directly from the provider you are connected with.`,

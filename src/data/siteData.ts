@@ -1,8 +1,8 @@
 export const site = {
   name: 'Young Electric Inc',
   domain: 'https://youngelectricincfl.com',
-  phone: '561-470-1433',
-  phoneRaw: 'tel:5614701433',
+  phone: '561-363-0946',
+  phoneRaw: 'tel:5613630946',
   email: 'info@youngelectricincfl.com',
   mainLocation: 'Boca Raton',
   mainState: 'Florida',
@@ -100,7 +100,7 @@ export const services: Service[] = [
     h1: 'Residential Electrician in Boca Raton, FL',
     metaTitle: 'Residential Electrician Boca Raton, FL | Young Electric Inc',
     metaDescription:
-      'Hire a residential electrician in Boca Raton, FL for safe, reliable home electrical service. Call 561-470-1433 to speak with a local team.',
+      'Hire a residential electrician in Boca Raton, FL for safe, reliable home electrical service. Call 561-363-0946 to speak with a local team.',
     heroImage: images.heroElectrician,
     heroImageAlt: 'Residential electrician working on an electrical panel in a Boca Raton, FL home',
     icon: 'Home',
@@ -145,7 +145,7 @@ export const services: Service[] = [
     ],
     faqs: [
       { q: 'Is Young Electric Inc an electrical contractor?', a: 'Yes. Young Electric Inc is a fully licensed and insured electrical contractor providing high-quality residential electrical services. All work is performed by our skilled in-house electricians.' },
-      { q: 'How quickly can I get connected with a local electrician?', a: 'When you call 561-470-1433, we connect you directly with our team. In many cases, you will receive a callback the same day, though availability depends on our team and the time of your call.' },
+      { q: 'How quickly can I get connected with a local electrician?', a: 'When you call 561-363-0946, we connect you directly with our team. In many cases, you will receive a callback the same day, though availability depends on our team and the time of your call.' },
       { q: 'Do you serve commercial properties?', a: 'No. We exclusively provide homeowners with residential electrical services. We do not facilitate commercial, industrial, or business electrical services.' },
       { q: 'Am I obligated to hire our team I am connected with?', a: 'No. The initial connection carries no obligation. You speak with our team, get the information you need, and decide whether to schedule service.' },
     ],
@@ -157,7 +157,7 @@ export const services: Service[] = [
     h1: 'Electrical Repair in Boca Raton, FL',
     metaTitle: 'Electrical Repair Boca Raton, FL | Fast Home Electrical Fixes',
     metaDescription:
-      'Need electrical repair in Boca Raton, FL? Hire a local residential electrical team for safe, reliable home repairs. Call 561-470-1433.',
+      'Need electrical repair in Boca Raton, FL? Hire a local residential electrical team for safe, reliable home repairs. Call 561-363-0946.',
     heroImage: images.electricianDrill,
     heroImageAlt: 'Electrician performing electrical repair work on a residential panel in Boca Raton, FL',
     icon: 'Wrench',
@@ -197,7 +197,7 @@ export const services: Service[] = [
       {
         heading: 'Connecting With a Local Repair Provider',
         paragraphs: [
-          'Young Electric Inc is a trusted local electrical contractor. When you call 561-470-1433, you reach our dedicated team who handles residential electrical repairs in Boca Raton. We will discuss your situation, schedule a visit, and provide clear pricing directly to you.',
+          'Young Electric Inc is a trusted local electrical contractor. When you call 561-363-0946, you reach our dedicated team who handles residential electrical repairs in Boca Raton. We will discuss your situation, schedule a visit, and provide clear pricing directly to you.',
         ],
       },
     ],
@@ -214,7 +214,7 @@ export const services: Service[] = [
     h1: 'Outlet Repair in Boca Raton, FL',
     metaTitle: 'Outlet Repair Boca Raton, FL | GFCI, Receptacle & Outlet Fixes',
     metaDescription:
-      'Outlet not working in your Boca Raton home? Hire a local residential electrical team for safe outlet and GFCI repair. Call 561-470-1433.',
+      'Outlet not working in your Boca Raton home? Hire a local residential electrical team for safe outlet and GFCI repair. Call 561-363-0946.',
     heroImage: images.outletInstall,
     heroImageAlt: 'Electrician installing and repairing a wall outlet in a Boca Raton, FL residence',
     icon: 'Plug',
@@ -252,7 +252,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Call 561-470-1433 to speak with our team at Young Electric Inc. We handle all scheduling, repairs, and pricing directly with you. We are a dedicated electrical contractor committed to quality.',
+          'Call 561-363-0946 to speak with our team at Young Electric Inc. We handle all scheduling, repairs, and pricing directly with you. We are a dedicated electrical contractor committed to quality.',
         ],
       },
     ],
@@ -269,7 +269,7 @@ export const services: Service[] = [
     h1: 'Switch Repair in Boca Raton, FL',
     metaTitle: 'Switch Repair Boca Raton, FL | Light Switch Fixes & Replacement',
     metaDescription:
-      'Light switch sparking or not working? Hire a local residential electrical team in Boca Raton for safe switch repair. Call 561-470-1433.',
+      'Light switch sparking or not working? Hire a local residential electrical team in Boca Raton for safe switch repair. Call 561-363-0946.',
     heroImage: images.switchWall,
     heroImageAlt: 'Close-up of a residential light switch on a wall in a Boca Raton, FL home',
     icon: 'ToggleLeft',
@@ -324,7 +324,7 @@ export const services: Service[] = [
     h1: 'Lighting Installation in Boca Raton, FL',
     metaTitle: 'Lighting Installation Boca Raton, FL | Indoor & Outdoor Home Lighting',
     metaDescription:
-      'Upgrade your home with professional lighting installation in Boca Raton, FL. Hire a local residential electrical team. Call 561-470-1433.',
+      'Upgrade your home with professional lighting installation in Boca Raton, FL. Hire a local residential electrical team. Call 561-363-0946.',
     heroImage: images.lightingLivingRoom,
     heroImageAlt: 'Beautiful modern living room with elegant lighting installation in a Boca Raton, FL home',
     icon: 'Lightbulb',
@@ -368,7 +368,7 @@ export const services: Service[] = [
       {
         heading: 'How the Connection Works',
         paragraphs: [
-          'Young Electric Inc is a dedicated electrical contractor. Call 561-470-1433 to speak with our team serving Boca Raton. We handle all installation details and pricing directly with you.',
+          'Young Electric Inc is a dedicated electrical contractor. Call 561-363-0946 to speak with our team serving Boca Raton. We handle all installation details and pricing directly with you.',
         ],
       },
     ],
@@ -385,7 +385,7 @@ export const services: Service[] = [
     h1: 'Electrical Panel Service in Boca Raton, FL',
     metaTitle: 'Electrical Panel Service Boca Raton, FL | Panel Upgrades & Repair',
     metaDescription:
-      'Need an electrical panel upgrade in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call 561-470-1433.',
+      'Need an electrical panel upgrade in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call 561-363-0946.',
     heroImage: images.panelCloseup,
     heroImageAlt: 'Close-up of a residential electrical panel with circuit breakers in a Boca Raton, FL home',
     icon: 'LayoutGrid',
@@ -430,7 +430,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Young Electric Inc is a professional electrical contractor. Our team handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-470-1433 to schedule your service.',
+          'Young Electric Inc is a professional electrical contractor. Our team handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-363-0946 to schedule your service.',
         ],
       },
     ],
@@ -447,7 +447,7 @@ export const services: Service[] = [
     h1: 'Residential Wiring in Boca Raton, FL',
     metaTitle: 'Residential Wiring Boca Raton, FL | Home Wiring & Rewiring',
     metaDescription:
-      'Need home wiring or rewiring in Boca Raton, FL? Hire a local residential electrical team for safe, code-compliant wiring. Call 561-470-1433.',
+      'Need home wiring or rewiring in Boca Raton, FL? Hire a local residential electrical team for safe, code-compliant wiring. Call 561-363-0946.',
     heroImage: images.wiring,
     heroImageAlt: 'Residential electrical wiring being installed during a home renovation in Boca Raton, FL',
     icon: 'Cable',
@@ -490,7 +490,7 @@ export const services: Service[] = [
       {
         heading: 'How the Connection Works',
         paragraphs: [
-          'Young Electric Inc is an experienced electrical contractor. Call 561-470-1433 to speak with our team for home wiring and rewiring in Boca Raton. We manage all work and pricing directly with you.',
+          'Young Electric Inc is an experienced electrical contractor. Call 561-363-0946 to speak with our team for home wiring and rewiring in Boca Raton. We manage all work and pricing directly with you.',
         ],
       },
     ],
@@ -507,7 +507,7 @@ export const services: Service[] = [
     h1: 'Ceiling Fan Installation in Boca Raton, FL',
     metaTitle: 'Ceiling Fan Installation Boca Raton, FL | Safe Ceiling Fan Mounting',
     metaDescription:
-      'Need a ceiling fan installed in your Boca Raton home? Hire a local residential electrical team for safe, secure installation. Call 561-470-1433.',
+      'Need a ceiling fan installed in your Boca Raton home? Hire a local residential electrical team for safe, secure installation. Call 561-363-0946.',
     heroImage: images.ceilingFanRoom,
     heroImageAlt: 'Living room with a ceiling fan installed in a Boca Raton, FL home',
     icon: 'Fan',
@@ -544,7 +544,7 @@ export const services: Service[] = [
       {
         heading: 'Connecting With a Local Provider',
         paragraphs: [
-          'Call 561-470-1433 to reach our team at Young Electric Inc serving Boca Raton. We handle all installation, scheduling, and pricing directly with you. We are a fully licensed electrical contractor.',
+          'Call 561-363-0946 to reach our team at Young Electric Inc serving Boca Raton. We handle all installation, scheduling, and pricing directly with you. We are a fully licensed electrical contractor.',
         ],
       },
     ],
@@ -561,7 +561,7 @@ export const services: Service[] = [
     h1: 'EV Charger Installation in Boca Raton, FL',
     metaTitle: 'EV Charger Installation Boca Raton, FL | Home EV Charging Stations',
     metaDescription:
-      'Install a home EV charger in Boca Raton, FL. Hire a local residential electrical team for safe Level 2 charger installation. Call 561-470-1433.',
+      'Install a home EV charger in Boca Raton, FL. Hire a local residential electrical team for safe Level 2 charger installation. Call 561-363-0946.',
     heroImage: images.evCharger,
     heroImageAlt: 'Home EV charger installed on a wall for convenient electric vehicle charging in Boca Raton, FL',
     icon: 'BatteryCharging',
@@ -599,7 +599,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Young Electric Inc is your trusted electrical contractor. Call 561-470-1433 to speak with our team who installs home EV chargers in Boca Raton. We manage all installation and pricing directly with you.',
+          'Young Electric Inc is your trusted electrical contractor. Call 561-363-0946 to speak with our team who installs home EV chargers in Boca Raton. We manage all installation and pricing directly with you.',
         ],
       },
     ],
@@ -616,7 +616,7 @@ export const services: Service[] = [
     h1: 'Electrical Inspection in Boca Raton, FL',
     metaTitle: 'Electrical Inspection Boca Raton, FL | Home Safety Inspections',
     metaDescription:
-      'Schedule a residential electrical inspection in Boca Raton, FL. Hire a local team for a thorough home safety assessment. Call 561-470-1433.',
+      'Schedule a residential electrical inspection in Boca Raton, FL. Hire a local team for a thorough home safety assessment. Call 561-363-0946.',
     heroImage: images.inspection,
     heroImageAlt: 'Home electrical inspection checklist being reviewed for a residential property in Boca Raton, FL',
     icon: 'ClipboardCheck',
@@ -662,7 +662,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Young Electric Inc is a reliable electrical contractor. Call 561-470-1433 to reach our team who performs home electrical inspections in Boca Raton. We handle all scheduling and pricing directly with you.',
+          'Young Electric Inc is a reliable electrical contractor. Call 561-363-0946 to reach our team who performs home electrical inspections in Boca Raton. We handle all scheduling and pricing directly with you.',
         ],
       },
     ],
@@ -679,7 +679,7 @@ export const services: Service[] = [
     h1: 'Surge Protection in Boca Raton, FL',
     metaTitle: 'Surge Protection Boca Raton, FL | Whole-Home Surge Protection',
     metaDescription:
-      'Protect your home electronics with whole-home surge protection in Boca Raton, FL. Hire a local residential electrical team. Call 561-470-1433.',
+      'Protect your home electronics with whole-home surge protection in Boca Raton, FL. Hire a local residential electrical team. Call 561-363-0946.',
     heroImage: images.surgeProtection,
     heroImageAlt: 'Surge protection equipment for a residential electrical system in a Boca Raton, FL home',
     icon: 'Shield',
@@ -714,7 +714,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Call 561-470-1433 to speak with our expert in-house electricians serving Boca Raton. Our team assesses your home, recommends the right surge protection, and handles installation and pricing directly with you.',
+          'Call 561-363-0946 to speak with our expert in-house electricians serving Boca Raton. Our team assesses your home, recommends the right surge protection, and handles installation and pricing directly with you.',
         ],
       },
     ],
@@ -731,7 +731,7 @@ export const services: Service[] = [
     h1: 'Generator Electrical Service in Boca Raton, FL',
     metaTitle: 'Generator Electrical Service Boca Raton, FL | Home Generator Hookup',
     metaDescription:
-      'Need generator electrical service in Boca Raton, FL? Hire a local residential electrical team for home generator hookups. Call 561-470-1433.',
+      'Need generator electrical service in Boca Raton, FL? Hire a local residential electrical team for home generator hookups. Call 561-363-0946.',
     heroImage: images.generator,
     heroImageAlt: 'Home backup generator installation for a residential property in Boca Raton, FL',
     icon: 'Power',
@@ -769,7 +769,7 @@ export const services: Service[] = [
       {
         heading: 'How We Connect You',
         paragraphs: [
-          'Young Electric Inc is an expert electrical contractor. Call 561-470-1433 to speak with our team who handles generator electrical service in Boca Raton homes. We manage all work and pricing directly with you.',
+          'Young Electric Inc is an expert electrical contractor. Call 561-363-0946 to speak with our team who handles generator electrical service in Boca Raton homes. We manage all work and pricing directly with you.',
         ],
       },
     ],
@@ -869,7 +869,7 @@ export const homeFaqs = [
   { q: 'Is Young Electric Inc an electrical contractor?', a: 'Yes. Young Electric Inc is a fully licensed and insured electrical contractor. Our in-house team performs all electrical work. When you call us, you speak directly with our team who handles all service, scheduling, and pricing directly with you.' },
   { q: 'What areas do you serve?', a: 'We provide homeowners with residential electrical team members serving Boca Raton and surrounding communities in Palm Beach and Broward Counties, including Delray Beach, Deerfield Beach, Coral Springs, Parkland, Pompano Beach, Coconut Creek, and Boynton Beach.' },
   { q: 'Do you handle commercial electrical work?', a: 'No. We exclusively provide homeowners with residential electrical services. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical services of any kind.' },
-  { q: 'How quickly can I be connected with a local electrician?', a: 'When you call 561-470-1433, you speak with an available residential electrician. Same-day connections are common, though availability depends on the time of your call and our schedule.' },
+  { q: 'How quickly can I be connected with a local electrician?', a: 'When you call 561-363-0946, you speak with an available residential electrician. Same-day connections are common, though availability depends on the time of your call and our schedule.' },
   { q: 'Am I obligated to hire our team I am connected with?', a: 'No. The initial connection carries no obligation. You speak with our team, get the information you need, and decide whether to schedule service. The choice is always yours.' },
   { q: 'What types of home electrical services can I request?', a: 'We provide homeowners with team members who handle a wide range of residential electrical needs, including electrical repair, outlet and switch repair, lighting installation, electrical panel service, residential wiring, ceiling fan installation, EV charger installation, electrical inspections, surge protection, and generator electrical service.' },
   { q: 'Is there a cost to call and be connected?', a: 'Calling to speak with a local team is free. Any costs for actual electrical work are discussed and agreed upon directly directly with our dedicated team.' },

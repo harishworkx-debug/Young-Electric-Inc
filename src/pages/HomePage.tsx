@@ -42,7 +42,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Residential Electrician Boca Raton, FL | Young Electric Inc"
-        description="Hire a local residential electrician in Boca Raton, FL. We provide homeowners with expert in-house electricians for repairs, installations, panel upgrades & more. Call 561-470-1433."
+        description="Hire a local residential electrician in Boca Raton, FL. We provide homeowners with expert in-house electricians for repairs, installations, panel upgrades & more. Call 561-363-0946."
         canonicalPath="/"
         schema={[faqSchema, serviceSchema]}
       />
@@ -241,7 +241,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: '1', title: 'Call Us', desc: 'Dial 561-470-1433 and tell us what residential electrical help you need.', icon: Phone },
+              { num: '1', title: 'Call Us', desc: 'Dial 561-363-0946 and tell us what residential electrical help you need.', icon: Phone },
               { num: '2', title: 'Get Connected', desc: 'We provide you with an available expert in-house electrician.', icon: Zap },
               { num: '3', title: 'Get Help', desc: 'Our team discusses your needs, gives you a quote, and schedules service if you choose.', icon: CheckCircle2 },
             ].map((step) => (

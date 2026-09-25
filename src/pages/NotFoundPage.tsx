@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
       <SEO
         title="Page Not Found | Young Electric Inc"
-        description="The page you are looking for could not be found. Call 561-470-1433 to hire a residential electrician in Boca Raton, FL."
+        description="The page you are looking for could not be found. Call 561-363-0946 to hire a residential electrician in Boca Raton, FL."
         canonicalPath="/404"
       />
 
