@@ -9,6 +9,9 @@ import LocationPage from '@/pages/LocationPage';
 import ContactPage from '@/pages/ContactPage';
 import AboutPage from '@/pages/AboutPage';
 import FAQPage from '@/pages/FAQPage';
+import ReviewsPage from '@/pages/ReviewsPage';
+import BlogPage from '@/pages/BlogPage';
+import BlogPostPage from '@/pages/BlogPostPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import { services, locations } from '@/data/siteData';
 
@@ -25,6 +28,9 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/faqs" element={<FAQPage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:slug" element={<BlogPostPage />} />
               {/* Service pages (Boca Raton only) */}
               {services.map((service) => (
                 <Route

@@ -3,6 +3,7 @@ import { Phone, ArrowRight, MapPin } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import ServiceIcon from '@/components/ServiceIcon';
 import { site, services, locations, type Service } from '@/data/siteData';
 
@@ -50,6 +51,9 @@ export default function ServicePage({ service }: { service: Service }) {
             alt={service.heroImageAlt}
             className="w-full h-full object-cover opacity-25"
             loading="eager"
+            fetchpriority="high"
+            width="1920"
+            height="1080"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/80 via-primary-950/70 to-neutral-900/80" />
         </div>
@@ -57,13 +61,13 @@ export default function ServicePage({ service }: { service: Service }) {
 
         <div className="container-page relative">
           <div className="max-w-3xl">
-            <nav className="flex items-center gap-2 text-sm text-neutral-300 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/#services" className="hover:text-white transition-colors">Services</Link>
-              <span>/</span>
-              <span className="text-accent-400">{service.shortTitle}</span>
-            </nav>
+            <Breadcrumbs 
+              items={[
+                { name: 'Services', url: '/#services' },
+                { name: service.shortTitle, url: `/${service.slug}` }
+              ]}
+              theme="dark"
+            />
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white mb-6 border border-white/20">
               <MapPin className="h-4 w-4 text-accent-400" />
               Boca Raton, FL
@@ -98,7 +102,7 @@ export default function ServicePage({ service }: { service: Service }) {
                 <div className="flex h-14 w-14 mx-auto items-center justify-center rounded-xl bg-primary-50 mb-4">
                   <ServiceIcon name={b.icon} className="h-7 w-7 text-primary-600" />
                 </div>
-                <h3 className="font-display font-bold text-neutral-900 mb-2">{b.title}</h3>
+                <h2 className="font-display font-bold text-neutral-900 mb-2">{b.title}</h2>
                 <p className="text-sm text-neutral-600 leading-relaxed">{b.desc}</p>
               </div>
             ))}
@@ -126,12 +130,21 @@ export default function ServicePage({ service }: { service: Service }) {
                   )}
                 </div>
               ))}
+              
+              {/* Contextual Internal Linking Block */}
+              <div className="mt-8 p-6 bg-primary-50 rounded-xl border border-primary-100 prose prose-primary max-w-none">
+                <h2 className="text-xl font-bold text-neutral-900 mt-0 mb-3">Explore Related Services & Areas</h2>
+                <p className="text-neutral-700 mb-0">
+                  If you need additional assistance, we also provide expert <Link to="/electrical-repair" className="text-primary-600 font-medium hover:underline">residential electrical repair</Link> and <Link to="/electrical-panel-replacement" className="text-primary-600 font-medium hover:underline">electrical panel service</Link>. 
+                  Our in-house team is proud to be your trusted <Link to="/electrician-boca-raton-fl" className="text-primary-600 font-medium hover:underline">Boca Raton electrician</Link>, serving homeowners throughout South Florida.
+                </p>
+              </div>
             </div>
 
             <aside className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 <div className="card p-6 bg-primary-700 text-white">
-                  <h3 className="font-display font-bold text-xl mb-3">Ready to Get Connected?</h3>
+                  <h2 className="font-display font-bold text-xl mb-3">Ready to Get Connected?</h2>
                   <p className="text-primary-100 text-sm mb-4">
                     Call now to speak with an expert in-house electrician in Boca Raton.
                   </p>
@@ -142,7 +155,7 @@ export default function ServicePage({ service }: { service: Service }) {
                 </div>
 
                 <div className="card p-6">
-                  <h3 className="font-display font-bold text-lg text-neutral-900 mb-4">Other Residential Services</h3>
+                  <h2 className="font-display font-bold text-lg text-neutral-900 mb-4">Other Residential Services</h2>
                   <ul className="space-y-3">
                     {otherServices.map((s) => (
                       <li key={s.slug}>
@@ -162,7 +175,7 @@ export default function ServicePage({ service }: { service: Service }) {
                 </div>
 
                 <div className="card p-6 bg-neutral-50 border-2 border-primary-100">
-                  <h3 className="font-display font-bold text-sm text-neutral-900 mb-3">Service Areas</h3>
+                  <h2 className="font-display font-bold text-sm text-neutral-900 mb-3">Service Areas</h2>
                   <ul className="space-y-2 text-sm">
                     {locations.slice(0, 5).map((loc) => (
                       <li key={loc.slug}>

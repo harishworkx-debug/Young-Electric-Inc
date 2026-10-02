@@ -30,8 +30,17 @@ const routes = [
   '/',
   '/about/',
   '/faqs/',
-  '/contact/'
+  '/contact/',
+  '/reviews/',
+  '/blog/'
 ];
+
+// Add blog posts
+const blogContent = fs.existsSync('./src/data/blogData.ts') ? fs.readFileSync('./src/data/blogData.ts', 'utf-8') : '';
+const blogSlugs = getSlugs(blogContent);
+blogSlugs.forEach(slug => {
+  routes.push(`/blog/${slug}/`);
+});
 
 services.forEach(slug => {
   routes.push(`/${slug}/`);
@@ -41,9 +50,9 @@ locations.forEach(slug => {
   routes.push(`/electrician-${slug}/`);
 });
 
+const today = new Date().toISOString().split('T')[0];
 routes.forEach(route => {
-  const priority = route === '/' ? '1.0' : '0.8';
-  sitemap += `  <url>\n    <loc>${domain}${route}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
+  sitemap += `  <url>\n    <loc>${domain}${route}</loc>\n    <lastmod>${today}</lastmod>\n  </url>\n`;
 });
 
 sitemap += '</urlset>\n';

@@ -3,6 +3,7 @@ import { Phone, MapPin, Zap } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { site, services, locations, type Location } from '@/data/siteData';
 
 export default function LocationPage({
@@ -18,11 +19,11 @@ export default function LocationPage({
     ? `Electrician in ${location.name}, ${location.stateAbbr}`
     : `Electrical Services in ${location.name}, ${location.stateAbbr}`;
   const metaTitle = isElectrician
-    ? `Electrician ${location.name}, ${location.stateAbbr} | Residential Electrical`
-    : `Electrical Services ${location.name}, ${location.stateAbbr} | Residential`;
+    ? `Electrician in ${location.name}, ${location.stateAbbr} | ${site.name}`
+    : `Electrical Services in ${location.name}, ${location.stateAbbr} | ${site.name}`;
   const metaDescription = isElectrician
-    ? `Hire a residential electrician in ${location.name}, ${location.stateAbbr}. We provide homeowners with expert in-house electricians. Call ${site.phone}.`
-    : `Residential electrical services in ${location.name}, ${location.stateAbbr}. Hire an expert in-house electrician. Call ${site.phone}.`;
+    ? `Young Electric Inc provides residential and commercial electrical services in ${location.name}, ${location.stateAbbr} and surrounding areas. Call ${site.phone} for service.`
+    : `Young Electric Inc provides expert electrical services in ${location.name}, ${location.stateAbbr}. Call ${site.phone} to schedule service today.`;
 
   const localFaqs = [
     { q: `Do you connect homeowners with electricians in ${location.name}, ${location.stateAbbr}?`, a: `Yes. Young Electric Inc connects homeowners in ${location.name} and surrounding areas with expert in-house electricians. Call ${site.phone} to be connected.` },
@@ -59,13 +60,13 @@ export default function LocationPage({
 
         <div className="container-page relative">
           <div className="max-w-3xl">
-            <nav className="flex items-center gap-2 text-sm text-neutral-300 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/#service-areas" className="hover:text-white transition-colors">Service Areas</Link>
-              <span>/</span>
-              <span className="text-accent-400">{location.name}, {location.stateAbbr}</span>
-            </nav>
+            <Breadcrumbs 
+              items={[
+                { name: 'Service Areas', url: '/#service-areas' },
+                { name: `${location.name}, ${location.stateAbbr}`, url: `/${slug}` }
+              ]}
+              theme="dark"
+            />
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white mb-6 border border-white/20">
               <MapPin className="h-4 w-4 text-accent-400" />
               {location.name}, {location.stateAbbr}
@@ -94,15 +95,34 @@ export default function LocationPage({
         <div className="container-page">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 prose-content">
-              <h2>{isElectrician ? `Residential Electrician in ${location.name}, ${location.stateAbbr}` : `Residential Electrical Services in ${location.name}, ${location.stateAbbr}`}</h2>
-              <p>{location.description}</p>
-              <p>
-                Young Electric Inc is your trusted local electrical contractor serving homeowners in {location.name}. Our team of skilled electricians provides top-quality residential electrical services. When you call {site.phone}, you speak directly with our team to schedule service, get pricing, and have your electrical needs resolved efficiently.
-              </p>
+              
+              {location.content ? (
+                location.content.map((paragraph, idx) => (
+                  <p key={idx}>{paragraph}</p>
+                ))
+              ) : (
+                <p>{location.description}</p>
+              )}
 
-              <h3>Residential Electrical Help Available in {location.name}</h3>
+              {location.sections && location.sections.map((sec, idx) => (
+                <div key={`sec-${idx}`} className="mt-8">
+                  <h2>{sec.heading}</h2>
+                  {sec.paragraphs.map((p, pIdx) => (
+                    <p key={pIdx}>{p}</p>
+                  ))}
+                  {sec.list && (
+                    <ul>
+                      {sec.list.map((item, itemIdx) => (
+                        <li key={itemIdx}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+
+              <h2>Electrical Help Available in {location.name}</h2>
               <p>
-                We connect {location.name} homeowners with local team members who handle a full range of home electrical needs, including:
+                We provide {location.name} property owners with expert local team members who handle a full range of electrical needs, including:
               </p>
               <ul>
                 {services.map((s) => (
@@ -113,7 +133,7 @@ export default function LocationPage({
                 ))}
               </ul>
 
-              <h3>Serving {location.name} and Nearby Neighborhoods</h3>
+              <h2>Serving {location.name} and Nearby Neighborhoods</h2>
               <p>
                 Our teams we provide you with serve {location.name} and the surrounding area, including:
               </p>
@@ -123,13 +143,13 @@ export default function LocationPage({
                 ))}
               </ul>
 
-              <h3>Why Choose a Local Residential Provider?</h3>
+              <h2>Why Choose a Local Electrical Provider?</h2>
               <p>
-                Connecting with a local residential electrical team in {location.name} means working with someone who understands the homes, climate, and building practices common to {location.stateAbbr}. South Florida homes face unique electrical challenges — from lightning-induced power surges to humidity affecting outdoor wiring — and a local team can recommend solutions that fit your specific situation.
+                Connecting with a local electrical team in {location.name} means working with someone who understands the properties, climate, and building practices common to {location.stateAbbr}. South Florida buildings face unique electrical challenges — from lightning-induced power surges to humidity affecting outdoor wiring — and a local team can recommend solutions that fit your specific situation.
               </p>
 
               <div className="mt-6 p-6 bg-primary-50 rounded-xl border border-primary-100">
-                <h3 className="mb-3">Ready to Get Connected?</h3>
+                <h2 className="mb-3">Ready to Get Connected?</h2>
                 <p className="mb-4">
                   Call {site.phone} now and we will provide you with an expert in-house electrician serving {location.name}, {location.stateAbbr}. No obligation.
                 </p>
@@ -143,9 +163,9 @@ export default function LocationPage({
             <aside className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 <div className="card p-6 bg-primary-700 text-white">
-                  <h3 className="font-display font-bold text-xl mb-3">Call Now</h3>
+                  <h2 className="font-display font-bold text-xl mb-3">Call Now</h2>
                   <p className="text-primary-100 text-sm mb-4">
-                    Hire a local residential electrical team in {location.name}.
+                    Hire a local electrical team in {location.name}.
                   </p>
                   <a href={site.phoneRaw} className="btn-accent w-full">
                     <Phone className="h-4 w-4" />
@@ -154,7 +174,7 @@ export default function LocationPage({
                 </div>
 
                 <div className="card p-6">
-                  <h3 className="font-display font-bold text-lg text-neutral-900 mb-4">Boca Raton Service Pages</h3>
+                  <h2 className="font-display font-bold text-lg text-neutral-900 mb-4">Boca Raton Service Pages</h2>
                   <p className="text-sm text-neutral-600 mb-3">
                     Detailed service information is available for our main location, Boca Raton:
                   </p>
@@ -171,7 +191,7 @@ export default function LocationPage({
                 </div>
 
                 <div className="card p-6">
-                  <h3 className="font-display font-bold text-lg text-neutral-900 mb-4">Other Service Areas</h3>
+                  <h2 className="font-display font-bold text-lg text-neutral-900 mb-4">Other Service Areas</h2>
                   <ul className="space-y-2 text-sm">
                     {otherLocations.map((loc) => (
                       <li key={loc.slug}>

@@ -144,6 +144,9 @@ export default function Header() {
               <Link to="/faqs" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
                 FAQs
               </Link>
+              <Link to="/reviews" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
+                Reviews
+              </Link>
               <Link to="/contact" className="px-4 py-2 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors">
                 Contact
               </Link>
@@ -241,6 +244,13 @@ export default function Header() {
                 className="block px-4 py-3 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
               >
                 FAQs
+              </Link>
+              <Link
+                to="/reviews"
+                onClick={() => setMobileOpen(false)}
+                className="block px-4 py-3 text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
+              >
+                Reviews
               </Link>
               <Link
                 to="/contact"

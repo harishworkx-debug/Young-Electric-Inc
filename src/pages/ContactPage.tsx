@@ -80,7 +80,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-neutral-500 font-medium">Availability</p>
-                    <p className="text-lg font-bold text-neutral-900">Call for current availability</p>
+                    <p className="text-lg font-bold text-neutral-900">Regular Office Hours: Mon-Sat 8 AM-5 PM</p>
+                    <p className="text-sm font-semibold text-accent-600 mt-1">24/7 Emergency Calls Available</p>
                   </div>
                 </div>
               </div>

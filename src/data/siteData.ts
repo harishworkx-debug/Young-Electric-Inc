@@ -14,62 +14,34 @@ export const site = {
 };
 
 export const images = {
-  heroElectrician:
-    'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-  heroPanel:
-    'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
-  electricianPanel:
-    'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  electricianDrill:
-    'https://images.pexels.com/photos/27928759/pexels-photo-27928759.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  electricianWiring:
-    'https://images.pexels.com/photos/27928761/pexels-photo-27928761.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  panelCloseup:
-    'https://images.pexels.com/photos/8488029/pexels-photo-8488029.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  outletInstall:
-    'https://images.pexels.com/photos/4981794/pexels-photo-4981794.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  outletWall:
-    'https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  switchWall:
-    'https://images.pexels.com/photos/36738243/pexels-photo-36738243.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  outletCloseup:
-    'https://images.pexels.com/photos/978743/pexels-photo-978743.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  lightingLivingRoom:
-    'https://images.pexels.com/photos/8135492/pexels-photo-8135492.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  lightingChandelier:
-    'https://images.pexels.com/photos/14495880/pexels-photo-14495880.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  lightingCeilingLight:
-    'https://images.pexels.com/photos/15269291/pexels-photo-15269291.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  ceilingFanRoom:
-    'https://images.pexels.com/photos/3990590/pexels-photo-3990590.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  ceilingFanBedroom:
-    'https://images.pexels.com/photos/3958956/pexels-photo-3958956.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  evCharger:
-    'https://images.pexels.com/photos/27355826/pexels-photo-27355826.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  evCharger2:
-    'https://images.pexels.com/photos/27355830/pexels-photo-27355830.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  inspection:
-    'https://images.pexels.com/photos/8293680/pexels-photo-8293680.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  inspection2:
-    'https://images.pexels.com/photos/8293678/pexels-photo-8293678.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  surgeProtection:
-    'https://images.pexels.com/photos/39234197/pexels-photo-39234197.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  surgeOutlet:
-    'https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  generator:
-    'https://images.pexels.com/photos/9875678/pexels-photo-9875678.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  wiring:
-    'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  wiring2:
-    'https://images.pexels.com/photos/3614763/pexels-photo-3614763.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  floridaHome:
-    'https://images.pexels.com/photos/19219055/pexels-photo-19219055.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  floridaHome2:
-    'https://images.pexels.com/photos/5177211/pexels-photo-5177211.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  electricianSmile:
-    'https://images.pexels.com/photos/7647233/pexels-photo-7647233.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
-  lightBulb:
-    'https://images.pexels.com/photos/7641361/pexels-photo-7641361.jpeg?auto=compress&cs=tinysrgb&w=940&h=650',
+  heroElectrician: '/images/electrician-boca-raton-fl.jpg',
+  heroPanel: '/images/residential-electrical-panel-upgrade.jpg',
+  electricianPanel: '/images/electrician-inspecting-breaker-box.jpg',
+  electricianDrill: '/images/electrical-contractor-drilling.jpg',
+  electricianWiring: '/images/installing-new-home-wiring.jpg',
+  panelCloseup: '/images/circuit-breakers-in-electrical-panel.jpg',
+  outletInstall: '/images/repairing-wall-receptacle.jpg',
+  outletWall: '/images/standard-120v-wall-outlet.jpg',
+  switchWall: '/images/modern-light-switch-installation.jpg',
+  outletCloseup: '/images/testing-outlet-voltage.jpg',
+  lightingLivingRoom: '/images/living-room-recessed-lighting.jpg',
+  lightingChandelier: '/images/dining-room-chandelier-installation.jpg',
+  lightingCeilingLight: '/images/led-ceiling-light-fixture.jpg',
+  ceilingFanRoom: '/images/living-room-ceiling-fan.jpg',
+  ceilingFanBedroom: '/images/bedroom-ceiling-fan-replacement.jpg',
+  evCharger: '/images/home-ev-charging-station.jpg',
+  evCharger2: '/images/level-2-ev-charger-plugged-in.jpg',
+  inspection: '/images/electrical-safety-inspection-checklist.jpg',
+  inspection2: '/images/electrician-evaluating-home-wiring.jpg',
+  surgeProtection: '/images/whole-home-surge-protector.jpg',
+  surgeOutlet: '/images/point-of-use-surge-protection-strip.jpg',
+  generator: '/images/residential-standby-generator.jpg',
+  wiring: '/images/new-construction-electrical-wiring.jpg',
+  wiring2: '/images/running-romex-cable-in-attic.jpg',
+  floridaHome: '/images/south-florida-residential-home.jpg',
+  floridaHome2: '/images/modern-florida-house-exterior.jpg',
+  electricianSmile: '/images/friendly-local-electrician.jpg',
+  lightBulb: '/images/led-light-bulb-energy-savings.jpg',
 };
 
 export type Service = {
@@ -98,7 +70,7 @@ export const services: Service[] = [
     title: 'Residential Electrician Boca Raton, FL',
     shortTitle: 'Residential Electrician',
     h1: 'Residential Electrician in Boca Raton, FL',
-    metaTitle: 'Residential Electrician Boca Raton, FL | Young Electric Inc',
+    metaTitle: 'Residential Electrician in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Hire a residential electrician in Boca Raton, FL for safe, reliable home electrical service. Call 561-363-0946 to speak with a local team.',
     heroImage: images.heroElectrician,
@@ -155,7 +127,7 @@ export const services: Service[] = [
     title: 'Electrical Repair Boca Raton, FL',
     shortTitle: 'Electrical Repair',
     h1: 'Electrical Repair in Boca Raton, FL',
-    metaTitle: 'Electrical Repair Boca Raton, FL | Fast Home Electrical Fixes',
+    metaTitle: 'Electrical Repair in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Need electrical repair in Boca Raton, FL? Hire a local residential electrical team for safe, reliable home repairs. Call 561-363-0946.',
     heroImage: images.electricianDrill,
@@ -212,7 +184,7 @@ export const services: Service[] = [
     title: 'Outlet Repair Boca Raton, FL',
     shortTitle: 'Outlet Repair',
     h1: 'Outlet Repair in Boca Raton, FL',
-    metaTitle: 'Outlet Repair Boca Raton, FL | GFCI, Receptacle & Outlet Fixes',
+    metaTitle: 'Outlet Repair in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Outlet not working in your Boca Raton home? Hire a local residential electrical team for safe outlet and GFCI repair. Call 561-363-0946.',
     heroImage: images.outletInstall,
@@ -267,7 +239,7 @@ export const services: Service[] = [
     title: 'Switch Repair Boca Raton, FL',
     shortTitle: 'Switch Repair',
     h1: 'Switch Repair in Boca Raton, FL',
-    metaTitle: 'Switch Repair Boca Raton, FL | Light Switch Fixes & Replacement',
+    metaTitle: 'Switch Repair in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Light switch sparking or not working? Hire a local residential electrical team in Boca Raton for safe switch repair. Call 561-363-0946.',
     heroImage: images.switchWall,
@@ -322,7 +294,7 @@ export const services: Service[] = [
     title: 'Lighting Installation Boca Raton, FL',
     shortTitle: 'Lighting Installation',
     h1: 'Lighting Installation in Boca Raton, FL',
-    metaTitle: 'Lighting Installation Boca Raton, FL | Indoor & Outdoor Home Lighting',
+    metaTitle: 'Lighting Installation in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Upgrade your home with professional lighting installation in Boca Raton, FL. Hire a local residential electrical team. Call 561-363-0946.',
     heroImage: images.lightingLivingRoom,
@@ -380,72 +352,81 @@ export const services: Service[] = [
   },
   {
     slug: 'electrical-panel-service-boca-raton-fl',
-    title: 'Electrical Panel Service Boca Raton, FL',
-    shortTitle: 'Electrical Panel',
-    h1: 'Electrical Panel Service in Boca Raton, FL',
-    metaTitle: 'Electrical Panel Service Boca Raton, FL | Panel Upgrades & Repair',
-    metaDescription:
-      'Need an electrical panel upgrade in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call 561-363-0946.',
+    title: 'Electrical Panel Replacement Boca Raton, FL',
+    shortTitle: 'Electrical Panel Replacement',
+    h1: 'Electrical Panel Replacement in Boca Raton, FL',
+    metaTitle: 'Electrical Panel Replacement in Boca Raton, FL | Young Electric Inc',
+    metaDescription: 'Need an electrical panel upgrade or replacement in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call 561-363-0946.',
     heroImage: images.panelCloseup,
     heroImageAlt: 'Close-up of a residential electrical panel with circuit breakers in a Boca Raton, FL home',
     icon: 'LayoutGrid',
-    intro:
-      'Your electrical panel is the heart of your home electrical system. It distributes power to every circuit and protects your home from overloads. If your panel is outdated, damaged, or too small for your needs, Young Electric Inc provides Boca Raton homeowners with expert in-house electricians who service, repair, and upgrade home panels.',
+    intro: 'Your electrical panel is the heart of your home electrical system, distributing power safely to every circuit. For Boca Raton homeowners dealing with older properties or increasing electrical demands, an outdated panel can lead to tripped breakers, power loss, and significant safety hazards. Young Electric Inc helps homeowners and businesses in Boca Raton resolve these issues by providing expert, code-compliant electrical panel replacements and upgrades.',
     benefits: [
-      { title: 'Panel Upgrades', desc: 'Replace outdated 100-amp panels with modern 200-amp service.', icon: 'TrendingUp' },
-      { title: 'Safety First', desc: 'Remove dangerous or recalled panels from your home.', icon: 'ShieldCheck' },
-      { title: 'More Capacity', desc: 'Add circuits for new appliances, EV chargers, or home additions.', icon: 'Zap' },
-      { title: 'Residential Only', desc: 'Home panel service exclusively—no commercial panels.', icon: 'Home' },
+      { title: 'Increased Capacity', desc: 'Upgrade to 200-amp or 400-amp service for modern needs.', icon: 'TrendingUp' },
+      { title: 'Safety First', desc: 'Remove dangerous or recalled panels (e.g., FPE, Zinsco) from your home.', icon: 'ShieldCheck' },
+      { title: 'Future-Proof', desc: 'Add capacity for EV chargers, generators, or home additions.', icon: 'Zap' },
+      { title: 'Local Permitting', desc: 'We handle all HOA approvals and Boca Raton municipal permits.', icon: 'FileCheck' },
     ],
     sections: [
       {
-        heading: 'Does Your Home Need a Panel Upgrade?',
+        heading: 'What Our Panel Replacement Service Includes',
         paragraphs: [
-          'Many homes in Boca Raton were built with 100-amp or 150-amp electrical panels that are adequate for basic use but struggle to support modern electrical demands. If you have added an EV charger, a tankless water heater, a new addition, or an upgraded kitchen, your panel may need more capacity.',
-          'Signs that your panel may need service or replacement include:',
+          'Replacing an electrical panel is a major structural upgrade to your electrical system. Our comprehensive service includes safely removing your old equipment, installing a modern, high-capacity panel, grounding the system to current electrical codes, and ensuring every circuit is properly labeled and balanced.'
+        ]
+      },
+      {
+        heading: 'Common Signs You Need a Panel Upgrade',
+        paragraphs: [
+          'Many homes in Boca Raton were built with 100-amp panels that struggle to support today\'s electrical demands. You likely need a panel replacement or upgrade if you experience any of the following:'
         ],
         list: [
-          'Breakers that trip frequently',
-          'A panel that is warm, rusted, or has burn marks',
-          'Lights that dim when appliances turn on',
-          'Not enough breaker space for new circuits',
-          'A panel that is over 25 years old',
-          'Use of multiple power strips because you lack outlets',
-          'Insurance requirements or inspection findings',
-        ],
+          'Frequent breaker trips when running multiple appliances',
+          'Insufficient capacity for a new EV charger or HVAC system',
+          'Outdated or recalled equipment (like Federal Pacific or Zinsco panels)',
+          'Planning a major home renovation or electrical addition',
+          'Lights that dim or flicker when the AC kicks on',
+          'A panel that is warm to the touch or shows signs of rust and scorch marks'
+        ]
       },
       {
-        heading: 'Outdated and Recalled Panels',
+        heading: 'Our Panel Replacement Process',
         paragraphs: [
-          'Some older panels—particularly certain Federal Pacific Electric (FPE) and Zinsco brands—have known safety defects and are considered fire hazards. If your Boca Raton home has one of these panels, connecting with our team of electricians to replace it is strongly recommended.',
-          'Our team can identify your panel type and advise whether replacement is warranted.',
+          'We follow a strict, professional process to ensure your panel replacement is seamless and safe:'
         ],
+        list: [
+          'Inspection: We thoroughly evaluate your current panel, wiring, and grounding.',
+          'Load Assessment: We calculate your home\'s total power demand to size your new panel correctly.',
+          'Recommendation: You receive a clear, upfront proposal with no hidden fees.',
+          'Permit & Coordination: We handle all Boca Raton city permits and coordinate with FPL for service disconnection if required.',
+          'Installation: Our expert electricians safely remove the old panel and install the new system to code.',
+          'Inspection & Testing: We test every circuit and schedule the final municipal inspection.'
+        ]
       },
       {
-        heading: 'Subpanel Installation',
+        heading: 'Why Choose Young Electric Inc',
         paragraphs: [
-          'If your main panel is in good shape but you need additional circuits—such as for a garage workshop, a backyard pool, or a home addition—a subpanel can be a cost-effective solution. Our team of electricians installs a subpanel fed from your main panel and runs new circuits from it.',
-        ],
+          'We aren\'t just a generic contractor; we are Boca Raton\'s trusted electrical experts. We differentiate ourselves through our deep understanding of local building codes, our ability to seamlessly navigate HOA requirements, and our commitment to using only premium, corrosion-resistant electrical components suited for South Florida\'s climate.'
+        ]
       },
       {
-        heading: 'How We Connect You',
+        heading: 'Local Service Areas',
         paragraphs: [
-          'Young Electric Inc is a professional electrical contractor. Our team handles panel inspections, upgrades, and replacements in Boca Raton homes. Call 561-363-0946 to schedule your service.',
-        ],
-      },
+          'While we are based in and frequently serve Boca Raton, our expert panel replacement services extend to surrounding communities where we are genuinely equipped to deliver top-tier service. This includes Delray Beach, Deerfield Beach, Parkland, and Coral Springs.'
+        ]
+      }
     ],
     faqs: [
-      { q: 'How long does a panel upgrade take?', a: 'A typical residential panel upgrade takes about a day, though our team can give you a specific timeline based on your home.' },
-      { q: 'Will my power be off during the upgrade?', a: 'Yes, power is typically shut off for several hours during a panel replacement. Our team coordinates this with you in advance.' },
-      { q: 'Do you service commercial panels?', a: 'No. We exclusively provide homeowners with residential electrical services for home panel service.' },
-    ],
+      { q: 'How long does a panel replacement take?', a: 'A standard residential panel upgrade typically takes one full day. We coordinate with you to minimize the time your power is turned off.' },
+      { q: 'Will I need a permit for a panel upgrade in Boca Raton?', a: 'Yes, panel replacements require a permit. Young Electric Inc handles all the permitting and inspection scheduling with the city on your behalf.' },
+      { q: 'Does an EV charger require a panel upgrade?', a: 'It depends on your current capacity. Level 2 EV chargers require a dedicated 240V circuit. During our load assessment, we will determine if your current panel can safely support it.' }
+    ]
   },
   {
     slug: 'residential-wiring-boca-raton-fl',
     title: 'Residential Wiring Boca Raton, FL',
     shortTitle: 'Residential Wiring',
     h1: 'Residential Wiring in Boca Raton, FL',
-    metaTitle: 'Residential Wiring Boca Raton, FL | Home Wiring & Rewiring',
+    metaTitle: 'Residential Wiring in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Need home wiring or rewiring in Boca Raton, FL? Hire a local residential electrical team for safe, code-compliant wiring. Call 561-363-0946.',
     heroImage: images.wiring,
@@ -505,7 +486,7 @@ export const services: Service[] = [
     title: 'Ceiling Fan Installation Boca Raton, FL',
     shortTitle: 'Ceiling Fan Installation',
     h1: 'Ceiling Fan Installation in Boca Raton, FL',
-    metaTitle: 'Ceiling Fan Installation Boca Raton, FL | Safe Ceiling Fan Mounting',
+    metaTitle: 'Ceiling Fan Installation in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Need a ceiling fan installed in your Boca Raton home? Hire a local residential electrical team for safe, secure installation. Call 561-363-0946.',
     heroImage: images.ceilingFanRoom,
@@ -559,7 +540,7 @@ export const services: Service[] = [
     title: 'EV Charger Installation Boca Raton, FL',
     shortTitle: 'EV Charger Installation',
     h1: 'EV Charger Installation in Boca Raton, FL',
-    metaTitle: 'EV Charger Installation Boca Raton, FL | Home EV Charging Stations',
+    metaTitle: 'EV Charger Installation in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Install a home EV charger in Boca Raton, FL. Hire a local residential electrical team for safe Level 2 charger installation. Call 561-363-0946.',
     heroImage: images.evCharger,
@@ -614,7 +595,7 @@ export const services: Service[] = [
     title: 'Electrical Inspection Boca Raton, FL',
     shortTitle: 'Electrical Inspection',
     h1: 'Electrical Inspection in Boca Raton, FL',
-    metaTitle: 'Electrical Inspection Boca Raton, FL | Home Safety Inspections',
+    metaTitle: 'Electrical Inspection in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Schedule a residential electrical inspection in Boca Raton, FL. Hire a local team for a thorough home safety assessment. Call 561-363-0946.',
     heroImage: images.inspection,
@@ -677,7 +658,7 @@ export const services: Service[] = [
     title: 'Surge Protection Boca Raton, FL',
     shortTitle: 'Surge Protection',
     h1: 'Surge Protection in Boca Raton, FL',
-    metaTitle: 'Surge Protection Boca Raton, FL | Whole-Home Surge Protection',
+    metaTitle: 'Surge Protection in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Protect your home electronics with whole-home surge protection in Boca Raton, FL. Hire a local residential electrical team. Call 561-363-0946.',
     heroImage: images.surgeProtection,
@@ -725,11 +706,11 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: 'generator-electrical-service-boca-raton-fl',
+    slug: 'generator-installation-boca-raton-fl',
     title: 'Generator Electrical Service Boca Raton, FL',
     shortTitle: 'Generator Electrical',
-    h1: 'Generator Electrical Service in Boca Raton, FL',
-    metaTitle: 'Generator Electrical Service Boca Raton, FL | Home Generator Hookup',
+    h1: 'Generator Installation & Transfer Switches in Boca Raton, FL',
+    metaTitle: 'Generator Electrical in Boca Raton, FL | Young Electric Inc',
     metaDescription:
       'Need generator electrical service in Boca Raton, FL? Hire a local residential electrical team for home generator hookups. Call 561-363-0946.',
     heroImage: images.generator,
@@ -796,72 +777,64 @@ export const locations: Location[] = [
     name: 'Boca Raton',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Boca Raton is a vibrant residential community in Palm Beach County known for its beautiful homes, family-friendly neighborhoods, and upscale residential developments. Homeowners here value reliable residential electrical service for everything from lighting upgrades to panel modernization.',
-    nearbyAreas: ['Boca Raton', 'Boca Del Mar', 'Boca Pointe', 'Mission Bay', 'West Boca Raton'],
+    description: 'Boca Raton is a premier residential and commercial hub in Palm Beach County. From historic homes in Old Floresta needing complete rewiring to modern estates in Woodfield Country Club requiring advanced smart home automation, electrical needs vary wildly. Our team handles the stringent permitting requirements of the City of Boca Raton, ensuring every panel upgrade, EV charger installation, and emergency repair is safe and code-compliant.',
+    nearbyAreas: ['Old Floresta', 'Woodfield Country Club', 'Boca Del Mar', 'Boca Pointe', 'Mission Bay', 'West Boca Raton', 'Royal Palm Yacht & Country Club'],
   },
   {
     slug: 'delray-beach-fl',
     name: 'Delray Beach',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Delray Beach is a charming coastal community just south of Boca Raton with a mix of historic homes and modern residential developments. Homeowners often need residential electrical help for older home wiring updates and new fixture installations.',
-    nearbyAreas: ['Delray Beach', 'Pineapple Grove', 'Lake Ida', 'Tropic Isle'],
+    description: 'Delray Beach combines a rich history with rapid modern development. Many classic homes near the Pineapple Grove Arts District and Lake Ida are undergoing renovations that require modern electrical panels and grounded wiring. Whether you need a commercial electrician for an Atlantic Ave storefront or residential electrical repairs, we navigate Delray\'s local building codes seamlessly.',
+    nearbyAreas: ['Pineapple Grove', 'Lake Ida', 'Tropic Isle', 'Kings Point', 'Marina Historic District', 'Atlantic Ave Area'],
   },
   {
     slug: 'deerfield-beach-fl',
     name: 'Deerfield Beach',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Deerfield Beach sits between Boca Raton and Pompano Beach and offers a range of residential neighborhoods. Homeowners here frequently need residential electrical services for panel upgrades, outlet repairs, and lighting installations.',
-    nearbyAreas: ['Deerfield Beach', 'Coves', 'Palm Aire', 'The Meadows'],
+    description: 'Bordering Boca Raton to the south, Deerfield Beach features a mix of coastal condominiums and inland single-family neighborhoods like The Cove and Century Village. Older coastal properties often face electrical wear from salt air, requiring frequent outlet repairs and panel replacements. We provide prompt emergency electrical services and robust surge protection for these vulnerable systems.',
+    nearbyAreas: ['The Cove', 'Century Village', 'Deerfield Island', 'Waterways', 'Crystal Lake'],
   },
   {
     slug: 'coral-springs-fl',
     name: 'Coral Springs',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Coral Springs is a family-oriented residential city in Broward County with many single-family homes built in the 1970s through 2000s. These homes often need electrical panel upgrades, additional circuits, and modern lighting.',
-    nearbyAreas: ['Coral Springs', 'Eagle Trace', 'Heron Bay', 'Cypress Run'],
+    description: 'Coral Springs is a rapidly growing family-oriented city with a vast number of homes built in the 1980s and 90s. These properties are now prime candidates for whole-house rewiring, aluminum wiring remediation, and electrical panel upgrades. Our local electricians are highly familiar with Coral Springs\' residential infrastructure and offer specialized troubleshooting for aging circuits.',
+    nearbyAreas: ['Eagle Trace', 'Heron Bay', 'Cypress Run', 'Maplewood', 'Kensington', 'Pine Tree Estates'],
   },
   {
     slug: 'parkland-fl',
     name: 'Parkland',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Parkland is a quiet residential city known for its large homes and equestrian properties. Homeowners here often request residential electrical help for new construction wiring, EV charger installation, and whole-home surge protection.',
-    nearbyAreas: ['Parkland', 'Coral Springs', 'Heron Bay', 'Pine Tree Parkland'],
+    description: 'Known for its sprawling equestrian estates and luxury developments, Parkland demands high-capacity electrical systems. We frequently install Level 2 EV chargers, whole-home standby generators, and extensive outdoor lighting for Parkland homeowners. Our electrical contractors ensure your property has the robust electrical backbone required for modern luxury living.',
+    nearbyAreas: ['Heron Bay', 'Pine Tree Estates', 'Parkland Golf & Country Club', 'Watercrest', 'MiraLago'],
   },
   {
     slug: 'pompano-beach-fl',
     name: 'Pompano Beach',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Pompano Beach offers waterfront homes and established residential neighborhoods. Homeowners commonly need residential electrical service for older home rewiring, outlet upgrades, and ceiling fan installation.',
-    nearbyAreas: ['Pompano Beach', 'Hillsboro Shores', 'Pompano Beach Highlands', 'Palm Aire'],
+    description: 'Pompano Beach is undergoing massive redevelopment. From historic beachfront cottages in Hillsboro Shores to new commercial facilities, electrical demands are at an all-time high. Our team provides dedicated circuitry, code violation corrections, and marine-grade outdoor electrical installations designed to withstand the harsh South Florida coastal environment.',
+    nearbyAreas: ['Hillsboro Shores', 'Pompano Beach Highlands', 'Palm Aire', 'Cypress Lakes', 'Collier City'],
   },
   {
     slug: 'coconut-creek-fl',
     name: 'Coconut Creek',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Coconut Creek is a residential city in Broward County with a mix of established and newer home communities. Homeowners frequently need residential electrical help for lighting upgrades, panel service, and generator electrical connections.',
-    nearbyAreas: ['Coconut Creek', 'Wynmoor', 'The Township', 'Monterey Lakes'],
+    description: 'Often called the "Butterfly Capital of the World," Coconut Creek features a mix of established retirement communities like Wynmoor and newer family subdivisions. Our residential electricians frequently assist Wynmoor residents with ceiling fan installations, lighting upgrades, and safety inspections, while outfitting newer homes with dedicated EV charging stations.',
+    nearbyAreas: ['Wynmoor', 'The Township', 'Monterey Lakes', 'Centura Park', 'Winston Park'],
   },
   {
     slug: 'boynton-beach-fl',
     name: 'Boynton Beach',
     state: 'Florida',
     stateAbbr: 'FL',
-    description:
-      'Boynton Beach is a growing residential community in Palm Beach County with many active adult communities and family neighborhoods. Homeowners here often need residential electrical service for outlet repair, surge protection, and electrical inspections.',
-    nearbyAreas: ['Boynton Beach', 'Aberdeen', 'Chase Cove', 'Pelican Cove'],
+    description: 'Boynton Beach is a thriving residential community with a large concentration of active adult communities and rapidly expanding western suburbs. Homeowners here consistently trust us for electrical safety inspections, AFCI/GFCI breaker upgrades, and rapid-response emergency electrical repairs to protect their properties during Florida\'s severe storm seasons.',
+    nearbyAreas: ['Aberdeen', 'Canyon Isles', 'Valencia Lakes', 'Hunters Run', 'Quail Ridge', 'Leisureville'],
   },
 ];
 
@@ -874,4 +847,290 @@ export const homeFaqs = [
   { q: 'What types of home electrical services can I request?', a: 'We provide homeowners with team members who handle a wide range of residential electrical needs, including electrical repair, outlet and switch repair, lighting installation, electrical panel service, residential wiring, ceiling fan installation, EV charger installation, electrical inspections, surge protection, and generator electrical service.' },
   { q: 'Is there a cost to call and be connected?', a: 'Calling to speak with a local team is free. Any costs for actual electrical work are discussed and agreed upon directly directly with our dedicated team.' },
   { q: 'Do you guarantee the work of our teams?', a: 'Yes. Young Electric Inc is a professional electrical contractor, and we stand behind our work. All our electrical work is fully guaranteed and warrantied directly by us.' },
+
+  {
+    slug: 'emergency-electrician-boca-raton-fl',
+    title: 'Emergency Electrician in Boca Raton, FL',
+    shortTitle: 'Emergency Electrician',
+    h1: '24/7 Emergency Electrician in Boca Raton, FL',
+    metaTitle: 'Emergency Electrician in Boca Raton, FL | Young Electric Inc',
+    metaDescription: 'Need a 24/7 emergency electrician in Boca Raton? Young Electric Inc provides fast, reliable emergency electrical repairs when you need them most. Call 561-363-0946.',
+    heroImage: '/images/friendly-local-electrician.jpg',
+    heroImageAlt: 'Emergency electrician arriving quickly in Boca Raton',
+    intro: 'Electrical emergencies don\'t wait for regular business hours. Whether you have a sudden power loss, a sparking outlet, or a tripping breaker that won\'t reset, our 24/7 emergency electricians in Boca Raton are ready to restore safety to your home or business.',
+    icon: 'Clock',
+    sections: [
+      {
+        heading: 'What Our Emergency Service Includes',
+        paragraphs: [
+          'When you call us for an emergency, you get immediate attention. Our electricians arrive fully equipped to diagnose and repair urgent electrical faults on the spot.'
+        ],
+        list: [
+          'Rapid response and troubleshooting',
+          'Safe isolation of dangerous faults',
+          'Temporary emergency repairs to restore power',
+          'Comprehensive safety inspections',
+        ]
+      },
+      {
+        heading: 'Common Signs You Need an Emergency Electrician',
+        paragraphs: [
+          'Don\'t ignore these warning signs of severe electrical issues:'
+        ],
+        list: [
+          'Burning smells coming from outlets or the breaker box',
+          'Sparking or arcing from switches and receptacles',
+          'Partial or total power loss in the home',
+          'Breakers that trip immediately after being reset',
+          'Water damage near electrical panels or wiring'
+        ]
+      },
+      {
+        heading: 'Our Emergency Process',
+        paragraphs: [
+          'We follow a strict protocol to ensure your safety and a rapid resolution.'
+        ],
+        list: [
+          'Call our 24/7 emergency line',
+          'Immediate safety assessment over the phone',
+          'Rapid dispatch of an electrician',
+          'On-site fault diagnosis and repair',
+          'Post-repair safety testing'
+        ]
+      },
+      {
+        heading: 'Why Choose Young Electric Inc for Emergencies',
+        paragraphs: [
+          'When you are facing an electrical hazard, you need a trusted local team that will prioritize your safety without cutting corners.'
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'What constitutes an electrical emergency?', a: 'Any situation that poses an immediate risk of fire or electric shock is an emergency. This includes burning smells, sparking, exposed live wires, and sudden total power loss.' },
+      { q: 'Are you available after hours?', a: 'Yes, we have 24/7 emergency call availability to address critical electrical failures.' }
+    ],
+    benefits: [
+      { title: '24/7 Availability', desc: 'Ready to respond when you need us most.', icon: 'Clock' },
+      { title: 'Safety First', desc: 'Immediate mitigation of fire and shock risks.', icon: 'ShieldCheck' },
+      { title: 'Expert Diagnostics', desc: 'Fast identification of complex electrical faults.', icon: 'Zap' }
+    ]
+  },
+  {
+    slug: 'commercial-electrician-boca-raton-fl',
+    title: 'Commercial Electrician in Boca Raton, FL',
+    shortTitle: 'Commercial Electrician',
+    h1: 'Commercial Electrician in Boca Raton, FL',
+    metaTitle: 'Commercial Electrician in Boca Raton, FL | Young Electric Inc',
+    metaDescription: 'Trusted commercial electrician in Boca Raton, FL. We provide expert electrical repairs, lighting, wiring, and panel upgrades for businesses. Call 561-363-0946.',
+    heroImage: '/images/new-construction-electrical-wiring.jpg',
+    heroImageAlt: 'Commercial electrician working on complex business wiring',
+    intro: 'Your business relies on a safe, efficient, and up-to-code electrical system. Our commercial electricians in Boca Raton specialize in minimizing downtime and ensuring your facility meets all local electrical codes and operational demands.',
+    icon: 'Building',
+    sections: [
+      {
+        heading: 'Comprehensive Commercial Services',
+        paragraphs: [
+          'From retail build-outs to office rewiring, we handle the unique demands of commercial electrical systems with precision and expertise.'
+        ],
+        list: [
+          'Commercial electrical build-outs and renovations',
+          'LED lighting retrofits and energy efficiency upgrades',
+          'Dedicated circuitry and equipment wiring',
+          'Commercial electrical panel upgrades and maintenance',
+          'Code violation corrections'
+        ]
+      },
+      {
+        heading: 'The Commercial Electrical Process',
+        paragraphs: [
+          'We understand that time is money. Our process is designed to be efficient and minimally disruptive.'
+        ],
+        list: [
+          'Initial consultation and site evaluation',
+          'Detailed project estimation and timeline',
+          'Coordination with local inspectors and permitting',
+          'Professional installation or repair',
+          'Final walkthrough and testing'
+        ]
+      },
+      {
+        heading: 'Why Businesses Choose Young Electric',
+        paragraphs: [
+          'We partner with local businesses to provide scalable, reliable electrical solutions that support growth and safety.'
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'Do you handle commercial permitting?', a: 'Yes, we manage all necessary electrical permits and coordinate with Boca Raton city inspectors to ensure compliance.' },
+      { q: 'Can you work outside of normal business hours?', a: 'We can schedule projects to minimize disruption to your operations, including after-hours work when necessary.' }
+    ],
+    benefits: [
+      { title: 'Code Compliant', desc: 'Strict adherence to NEC and local commercial codes.', icon: 'CheckCircle2' },
+      { title: 'Minimal Downtime', desc: 'Efficient execution to keep your business running.', icon: 'Clock' },
+      { title: 'Scalable Solutions', desc: 'Electrical systems designed for future growth.', icon: 'TrendingUp' }
+    ]
+  },
+  {
+    slug: 'electrical-troubleshooting-boca-raton-fl',
+    title: 'Electrical Troubleshooting in Boca Raton, FL',
+    shortTitle: 'Electrical Troubleshooting',
+    h1: 'Electrical Troubleshooting & Diagnostics in Boca Raton, FL',
+    metaTitle: 'Electrical Troubleshooting in Boca Raton, FL | Young Electric Inc',
+    metaDescription: 'Experiencing electrical issues? Our expert electricians provide comprehensive electrical troubleshooting and diagnostics in Boca Raton. Call 561-363-0946.',
+    heroImage: '/images/testing-outlet-voltage.jpg',
+    heroImageAlt: 'Electrician using a multimeter for troubleshooting',
+    intro: 'Unexplained power losses, flickering lights, and tripping breakers can be frustrating and dangerous. Our expert electricians provide advanced electrical troubleshooting in Boca Raton to accurately diagnose and resolve complex hidden faults.',
+    icon: 'Search',
+    sections: [
+      {
+        heading: 'Advanced Diagnostic Services',
+        paragraphs: [
+          'We do not just guess; we use professional diagnostic equipment to trace faults directly to their source, saving you time and money.'
+        ],
+        list: [
+          'Circuit tracing and mapping',
+          'Voltage drop and load testing',
+          'Grounding system verification',
+          'Identifying loose or degrading connections',
+          'Testing GFCI and AFCI integrity'
+        ]
+      },
+      {
+        heading: 'Common Signs You Need Troubleshooting',
+        paragraphs: [
+          'Call us for diagnostics if you experience any of these persistent issues:'
+        ],
+        list: [
+          'Lights that dim when appliances turn on',
+          'Outlets that occasionally stop working',
+          'Unexplained spikes in your electric bill',
+          'A slight humming sound near switches or panels',
+          'Breakers that trip randomly without a clear overload'
+        ]
+      },
+      {
+        heading: 'Our Troubleshooting Process',
+        paragraphs: [
+          'A systematic approach to uncovering electrical gremlins.'
+        ],
+        list: [
+          'Detailed symptom analysis',
+          'Visual inspection of accessible components',
+          'Instrument-based circuit testing',
+          'Fault isolation and repair recommendation',
+          'Execution of repairs and final load testing'
+        ]
+      },
+      {
+        heading: 'Why Choose Young Electric Inc',
+        paragraphs: [
+          'Troubleshooting requires experience. Our seasoned electricians have seen it all and can quickly identify issues that others might miss.'
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'How long does troubleshooting take?', a: 'Most faults are identified within the first hour of testing, but complex intermittent issues in older wiring can sometimes take longer to trace.' },
+      { q: 'Is a tripping breaker always a bad breaker?', a: 'Not always. Often the breaker is doing its job by tripping due to a genuine overload or short circuit elsewhere in the line.' }
+    ],
+    benefits: [
+      { title: 'Accurate Diagnosis', desc: 'We fix the root cause, not just the symptom.', icon: 'Target' },
+      { title: 'Professional Tools', desc: 'State-of-the-art testing equipment used.', icon: 'Wrench' },
+      { title: 'Safety Focused', desc: 'Identifying hidden fire hazards before they escalate.', icon: 'ShieldCheck' }
+    ]
+  },
+  {
+    slug: 'breaker-repair-boca-raton-fl',
+    title: 'Circuit Breaker Repair in Boca Raton, FL',
+    shortTitle: 'Breaker Repair',
+    h1: 'Circuit Breaker Repair & Replacement in Boca Raton, FL',
+    metaTitle: 'Circuit Breaker Repair in Boca Raton, FL | Young Electric Inc',
+    metaDescription: 'Keep tripping breakers? Get expert circuit breaker repair and replacement in Boca Raton from Young Electric Inc. Call 561-363-0946 for fast service.',
+    heroImage: '/images/circuit-breakers-in-electrical-panel.jpg',
+    heroImageAlt: 'Electrician replacing a faulty circuit breaker',
+    intro: 'Your circuit breakers are the first line of defense against electrical fires. If you have a breaker that will not reset, feels hot to the touch, or trips constantly, our electricians provide expert breaker repair and replacement in Boca Raton.',
+    icon: 'ToggleRight',
+    sections: [
+      {
+        heading: 'Comprehensive Breaker Services',
+        paragraphs: [
+          'We service all major brands of electrical panels and handle everything from simple single-pole replacements to complex AFCI/GFCI upgrades.'
+        ],
+        list: [
+          'Diagnosing frequently tripping breakers',
+          'Replacing faulty or burned-out breakers',
+          'Installing Arc Fault (AFCI) and Ground Fault (GFCI) breakers',
+          'Upgrading breakers to handle higher loads',
+          'Addressing double-tapped breakers'
+        ]
+      },
+      {
+        heading: 'Signs of a Bad Circuit Breaker',
+        paragraphs: [
+          'Breakers can wear out over time. Watch for these indicators:'
+        ],
+        list: [
+          'The breaker feels warm or hot to the touch',
+          'You smell burning plastic near the panel',
+          'The breaker will not stay in the "On" position after resetting',
+          'Visible scorching or rust on the breaker or bus bar',
+          'The breaker trips constantly under normal loads'
+        ]
+      },
+      {
+        heading: 'Our Breaker Replacement Process',
+        paragraphs: [
+          'We ensure that every replacement is safe, code-compliant, and perfectly matched to your panel.'
+        ],
+        list: [
+          'Load testing the affected circuit',
+          'Inspecting the panel bus bar for damage',
+          'Selecting the exact manufacturer-approved replacement',
+          'Safe installation and torquing to spec',
+          'Verification of proper operation under load'
+        ]
+      },
+      {
+        heading: 'Why Young Electric Inc',
+        paragraphs: [
+          'Never compromise on panel components. We only use OEM parts and never install mismatched or counterfeit breakers.'
+        ]
+      }
+    ],
+    faqs: [
+      { q: 'Can I replace a breaker myself?', a: 'It is highly discouraged. Working inside the panel exposes you to lethal voltages. Only a licensed professional should remove the panel cover.' },
+      { q: 'Why do AFCI breakers trip so often?', a: 'AFCI breakers are highly sensitive to arcing. If they trip frequently, it could indicate a loose connection, a damaged appliance cord, or sometimes a nuisance trip that requires a newer generation breaker.' }
+    ],
+    benefits: [
+      { title: 'OEM Parts', desc: 'We only use exact-match, manufacturer-approved breakers.', icon: 'CheckCircle2' },
+      { title: 'Fast Service', desc: 'Quick replacements to restore your power safely.', icon: 'Zap' },
+      { title: 'Code Compliance', desc: 'Ensuring your panel meets current safety standards.', icon: 'ShieldCheck' }
+    ]
+  },
 ];
+
+export const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Electrician',
+  name: site.name,
+  url: site.domain,
+  telephone: site.phone,
+  image: images.heroElectrician,
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '08:00',
+      closes: '17:00'
+    }
+  ],
+  areaServed: {
+    '@type': 'City',
+    name: site.mainLocation,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: site.mainLocation,
+    addressRegion: site.mainStateAbbr,
+    addressCountry: 'US'
+  }
+};

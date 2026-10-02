@@ -17,6 +17,10 @@ export default function Footer() {
             <p className="text-sm text-neutral-400 leading-relaxed mb-4">
               A professional electrical contractor serving Boca Raton and South Florida homeowners with reliable residential electrical services.
             </p>
+            <div className="flex flex-col space-y-2 mb-4">
+              <Link to="/about" className="text-sm text-neutral-400 hover:text-primary-400 transition-colors">About Us</Link>
+              <Link to="/reviews" className="text-sm text-neutral-400 hover:text-primary-400 transition-colors">Customer Reviews</Link>
+            </div>
             <a href={site.phoneRaw} className="inline-flex items-center gap-2 text-success-400 font-semibold hover:text-success-300 transition-colors">
               <Phone className="h-4 w-4" />
               {site.phone}
@@ -68,6 +72,11 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 text-primary-400 flex-shrink-0" />
                 <span className="text-neutral-400">{site.mainLocation}, {site.mainStateAbbr}</span>
+              </li>
+              <li className="pt-2">
+                <p className="text-neutral-300 font-medium">Regular Office Hours:</p>
+                <p className="text-neutral-400">Mon-Sat 8 AM-5 PM</p>
+                <p className="text-accent-400 font-medium mt-1">24/7 Emergency Calls Available</p>
               </li>
             </ul>
             <div className="mt-4">

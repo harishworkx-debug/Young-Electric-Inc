@@ -4,8 +4,9 @@ import SEO from '@/components/SEO';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
 import ServiceAreasSection from '@/components/ServiceAreasSection';
+import TestimonialSection from '@/components/TestimonialSection';
 import ServiceIcon from '@/components/ServiceIcon';
-import { site, services, locations, images, homeFaqs } from '@/data/siteData';
+import { site, services, locations, images, homeFaqs, localBusinessSchema } from '@/data/siteData';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -20,7 +21,7 @@ const faqSchema = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  serviceType: 'Residential Electrical Services',
+  serviceType: 'Electrical Services',
   team: {
     '@type': 'LocalBusiness',
     name: site.name,
@@ -29,7 +30,7 @@ const serviceSchema = {
   areaServed: locations.map((l) => `${l.name}, ${l.stateAbbr}`),
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Residential Electrical Services',
+    name: 'Electrical Services',
     itemListElement: services.map((s) => ({
       '@type': 'Offer',
       itemOffered: { '@type': 'Service', name: s.shortTitle },
@@ -41,10 +42,10 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Residential Electrician Boca Raton, FL | Young Electric Inc"
-        description="Hire a local residential electrician in Boca Raton, FL. We provide homeowners with expert in-house electricians for repairs, installations, panel upgrades & more. Call 561-363-0946."
+        title="Electrician in Boca Raton, FL | Young Electric Inc"
+        description="Young Electric Inc provides residential and electrical services in Boca Raton, FL and surrounding areas. Call 561-363-0946 for service."
         canonicalPath="/"
-        schema={[faqSchema, serviceSchema]}
+        schema={[localBusinessSchema, faqSchema, serviceSchema]}
       />
 
       {/* Hero */}
@@ -52,9 +53,12 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <img
             src={images.heroElectrician}
-            alt="Residential electrician working on an electrical panel in a Boca Raton, FL home"
+            alt="Residential electrician working on an electrical panel"
             className="w-full h-full object-cover opacity-30"
             loading="eager"
+            fetchpriority="high"
+            width="1920"
+            height="1080"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/80 via-primary-950/70 to-neutral-900/80" />
         </div>
@@ -65,13 +69,13 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-white mb-6 border border-white/20">
               <MapPin className="h-4 w-4 text-accent-400" />
-              Serving Boca Raton & South Florida
+              Boca Raton & South Florida
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight">
-              Residential Electrician in <span className="text-accent-400">Boca Raton, FL</span>
+              Trusted <span className="text-accent-400">Electrician in Boca Raton, FL</span>
             </h1>
             <p className="text-lg lg:text-xl text-neutral-200 mb-8 leading-relaxed max-w-2xl">
-              Hire expert in-house electricians for safe, reliable home electrical service. From repairs to panel upgrades, lighting installation to EV chargers — we help you find available local professionals.
+              Young Electric Inc is your top-rated electrical contractor in Boca Raton. Whether you need a residential electrician, a commercial electrician, or a 24/7 emergency electrician in Boca Raton, our expert team is ready to help.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
@@ -88,11 +92,11 @@ export default function HomePage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
               <div className="flex items-center gap-2 text-neutral-200">
                 <Home className="h-5 w-5 text-accent-400" />
-                Residential Only
+                Residential & Commercial
               </div>
               <div className="flex items-center gap-2 text-neutral-200">
                 <Clock className="h-5 w-5 text-accent-400" />
-                Fast Connection
+                Emergency Electrician
               </div>
               <div className="flex items-center gap-2 text-neutral-200">
                 <ShieldCheck className="h-5 w-5 text-accent-400" />
@@ -114,12 +118,12 @@ export default function HomePage() {
               <p className="text-sm text-neutral-600 font-medium">User-Rated Service</p>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <Home className="h-6 w-6 text-primary-600" />
-              <p className="text-sm text-neutral-600 font-medium">Residential Focus</p>
+              <Zap className="h-6 w-6 text-primary-600" />
+              <p className="text-sm text-neutral-600 font-medium">Residential & Commercial</p>
             </div>
             <div className="flex flex-col items-center gap-1">
               <MapPin className="h-6 w-6 text-primary-600" />
-              <p className="text-sm text-neutral-600 font-medium">Boca Raton & South FL</p>
+              <p className="text-sm text-neutral-600 font-medium">South Florida</p>
             </div>
             <div className="flex flex-col items-center gap-1">
               <Phone className="h-6 w-6 text-primary-600" />
@@ -136,26 +140,26 @@ export default function HomePage() {
             <div>
               <span className="text-sm font-bold uppercase tracking-wider text-primary-600">About Young Electric Inc</span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-                Connecting Boca Raton Homeowners With Local Residential Electricians
+                Expert Electrical Services in South Florida
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  Young Electric Inc is a premier electrical contractor serving homeowners in Boca Raton and surrounding South Florida communities. We provide professional, reliable, and high-quality residential electrical services. Our experienced team is ready to handle all your home electrical needs.
+                  Young Electric Inc is a premier electrical contractor serving South Florida communities. We provide professional, reliable, and high-quality electrical services. Our experienced team is ready to handle all your residential and commercial electrical needs.
                 </p>
                 <p>
-                  Whether you need a simple outlet repair, a full panel upgrade, or an EV charger installed in your garage, one call connects you with a local team who can help. You speak directly with our team, get answers to your questions, and decide whether to schedule service. There is no obligation from the initial connection.
+                  Whether you need <Link to="/outlet-repair" className="text-primary-600 hover:underline">electrical repair in Boca Raton</Link>, a full <Link to="/electrical-panel-replacement" className="text-primary-600 hover:underline">electrical panel replacement in Boca Raton</Link>, an EV charger installed, or emergency assistance, one call connects you with a trusted local professional. If you are searching for an "electrician near me," we are your local experts.
                 </p>
                 <p>
-                  We focus exclusively on residential electrical services. We do not facilitate commercial, industrial, office, retail, restaurant, warehouse, or business electrical work. If you have a home electrical need in Boca Raton or nearby, we are here to help you find the right local team.
+                  We proudly serve Boca Raton and the greater South Florida area. No matter the size of the project—from small home repairs to complex commercial electrical jobs—we are here to help you find the right local team.
                 </p>
               </div>
 
               <div className="mt-8 space-y-3">
                 {[
                   'Direct connection with expert in-house electricians',
-                  'Residential electrical services only',
-                  'No obligation from the initial call',
-                  'Serving Boca Raton and surrounding South Florida communities',
+                  'Residential and commercial electrical services',
+                  'Fast response for emergency electrical needs',
+                  'Serving Boca Raton and surrounding South Florida',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-success-500 flex-shrink-0" />
@@ -174,9 +178,11 @@ export default function HomePage() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary-100 to-accent-100 rounded-3xl -z-10 blur-2xl opacity-50" />
               <img
                 src={images.electricianPanel}
-                alt="Professional residential electrician examining a home electrical panel in Boca Raton, FL"
-                className="rounded-2xl shadow-2xl w-full"
+                alt="Professional residential electrician examining a home electrical panel"
+                className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
                 loading="lazy"
+                width="800"
+                height="600"
               />
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl">
                 <div className="flex items-center gap-3">
@@ -184,8 +190,8 @@ export default function HomePage() {
                     <ShieldCheck className="h-6 w-6 text-success-600" />
                   </div>
                   <div>
-                    <p className="font-bold text-neutral-900">Residential-Only Service</p>
-                    <p className="text-sm text-neutral-600">No commercial or industrial work</p>
+                    <p className="font-bold text-neutral-900">Comprehensive Service</p>
+                    <p className="text-sm text-neutral-600">Residential, Commercial & Emergency</p>
                   </div>
                 </div>
               </div>
@@ -199,9 +205,9 @@ export default function HomePage() {
         <div className="container-page">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Our Services</span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Residential Electrical Services in Boca Raton</h2>
+            <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Electrical Services in South Florida</h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              We provide homeowners with local residential electrical team members who handle a full range of home electrical needs.
+              We provide you with local electrical team members who handle a full range of residential and commercial electrical needs.
             </p>
           </div>
 
@@ -215,9 +221,9 @@ export default function HomePage() {
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-50 group-hover:bg-primary-100 transition-colors mb-4">
                   <ServiceIcon name={service.icon} className="h-7 w-7 text-primary-600" />
                 </div>
-                <h3 className="font-display font-bold text-lg text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
+                <h2 className="font-display font-bold text-lg text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">
                   {service.shortTitle}
-                </h3>
+                </h2>
                 <p className="text-sm text-neutral-600 leading-relaxed mb-4 line-clamp-3">{service.intro}</p>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:gap-2 transition-all">
                   {service.shortTitle} <ArrowRight className="h-4 w-4" />
@@ -254,7 +260,7 @@ export default function HomePage() {
                     {step.num}
                   </span>
                 </div>
-                <h3 className="font-display font-bold text-xl text-neutral-900 mb-2">{step.title}</h3>
+                <h2 className="font-display font-bold text-xl text-neutral-900 mb-2">{step.title}</h2>
                 <p className="text-neutral-600 leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -275,25 +281,27 @@ export default function HomePage() {
             <div className="relative order-2 lg:order-1">
               <img
                 src={images.floridaHome}
-                alt="Beautiful residential home in Boca Raton, Florida"
-                className="rounded-2xl shadow-xl w-full"
+                alt="Beautiful South Florida residential home exterior"
+                className="rounded-2xl shadow-xl w-full aspect-video object-cover"
                 loading="lazy"
+                width="800"
+                height="450"
               />
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Boca Raton Residential Electrical</span>
+              <span className="text-sm font-bold uppercase tracking-wider text-primary-600">South Florida Electrical</span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-                Home Electrical Services in Boca Raton, Florida
+                Home & Business Electrical Services in South Florida
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  Boca Raton is one of South Florida&apos;s most desirable residential communities, with homes ranging from mid-century ranches to modern luxury estates. These homes have diverse electrical needs — from updating 1960s-era panels and wiring to installing the latest EV chargers and smart home lighting.
+                  South Florida properties range from mid-century homes to modern luxury estates and dynamic business facilities. These properties have diverse electrical needs — from updating older panels and wiring to installing the latest EV chargers and smart lighting systems.
                 </p>
                 <p>
-                  Florida&apos;s climate adds unique challenges for home electrical systems. Frequent thunderstorms create power surges that can damage electronics, hurricane season demands reliable backup power options, and high humidity affects outdoor wiring and outlets. A local residential electrical team understands these conditions and can recommend the right solutions for your home.
+                  Florida&apos;s climate adds unique challenges for electrical systems. Frequent thunderstorms create power surges that can damage electronics, hurricane season demands reliable backup power options, and high humidity affects outdoor wiring. A local electrical team understands these conditions and can recommend the right residential or commercial solutions.
                 </p>
                 <p>
-                  Whether you live in Boca Raton proper or nearby communities like Boca Del Mar, Mission Bay, or West Boca, connecting with a local residential electrical team ensures your home gets the attention it needs from someone who knows the area.
+                  Whether you live in Boca Raton proper or nearby communities, connecting with a local electrical team ensures your property gets the attention it needs. We are equipped to handle routine electrical maintenance, emergency repairs, and large-scale installations.
                 </p>
               </div>
 
@@ -314,13 +322,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <TestimonialSection />
+
       {/* Lead-gen disclaimer callout */}
       <section className="bg-warning-50 border-y border-warning-200">
         <div className="container-page py-6">
           <div className="flex items-start gap-3">
             <AlertCircle className="h-5 w-5 text-warning-600 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-neutral-700 leading-relaxed">
-              <strong>Professional Electrical Services:</strong> Young Electric Inc provides top-tier residential electrical services. We are a dedicated electrical contractor focused on safety, quality, and customer satisfaction. All work is performed by our skilled professionals to meet your home's needs.
+              <strong>Professional Electrical Services:</strong> Young Electric Inc provides top-tier residential and commercial electrical services. We are a dedicated electrical contractor focused on safety, quality, and customer satisfaction. All work is performed by our skilled professionals to meet your needs.
             </p>
           </div>
         </div>

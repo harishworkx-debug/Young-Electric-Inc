@@ -55,9 +55,12 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary-100 to-accent-100 rounded-3xl -z-10 blur-2xl opacity-50" />
               <img
                 src={images.electricianPanel}
-                alt="Professional residential electrician examining a home electrical panel in Boca Raton, FL"
-                className="rounded-2xl shadow-2xl w-full"
-                loading="lazy"
+                alt="Professional residential electrician examining a home electrical panel"
+                className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
+                loading="eager"
+                fetchpriority="high"
+                width="800"
+                height="600"
               />
               <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-xl">
                 <div className="flex items-center gap-3">
