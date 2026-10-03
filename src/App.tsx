@@ -15,49 +15,74 @@ import BlogPostPage from '@/pages/BlogPostPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import { services, locations } from '@/data/siteData';
 
-function App() {
+export function AppContent() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact/" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about/" element={<AboutPage />} />
+          <Route path="/faqs" element={<FAQPage />} />
+          <Route path="/faqs/" element={<FAQPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/reviews/" element={<ReviewsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/blog/:slug/" element={<BlogPostPage />} />
+
+          {/* Service pages */}
+          {services.map((service) => (
+            <Route
+              key={service.slug}
+              path={`/${service.slug}`}
+              element={<ServicePage service={service} />}
+            />
+          ))}
+          {services.map((service) => (
+            <Route
+              key={`${service.slug}-slash`}
+              path={`/${service.slug}/`}
+              element={<ServicePage service={service} />}
+            />
+          ))}
+
+          {/* Location pages: /electrician-[location] */}
+          {locations.map((loc) => (
+            <Route
+              key={`elec-${loc.slug}`}
+              path={`/electrician-${loc.slug}`}
+              element={<LocationPage location={loc} pageType="electrician" />}
+            />
+          ))}
+          {locations.map((loc) => (
+            <Route
+              key={`elec-${loc.slug}-slash`}
+              path={`/electrician-${loc.slug}/`}
+              element={<LocationPage location={loc} pageType="electrician" />}
+            />
+          ))}
+
+          <Route path="/404" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/faqs" element={<FAQPage />} />
-              <Route path="/reviews" element={<ReviewsPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPostPage />} />
-              {/* Service pages (Boca Raton only) */}
-              {services.map((service) => (
-                <Route
-                  key={service.slug}
-                  path={`/${service.slug}`}
-                  element={<ServicePage service={service} />}
-                />
-              ))}
-
-              {/* Location pages: /electrician-[location] */}
-              {locations.map((loc) => (
-                <Route
-                  key={`elec-${loc.slug}`}
-                  path={`/electrician-${loc.slug}`}
-                  element={<LocationPage location={loc} pageType="electrician" />}
-                />
-              ))}
-
-              <Route path="/404" element={<NotFoundPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+        <AppContent />
       </BrowserRouter>
     </HelmetProvider>
   );
 }
-
-export default App;

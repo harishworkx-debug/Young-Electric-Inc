@@ -58,7 +58,7 @@ export default function AboutPage() {
                 alt="Professional residential electrician examining a home electrical panel"
                 className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
                 width="800"
                 height="600"
               />

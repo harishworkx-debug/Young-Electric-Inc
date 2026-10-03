@@ -9,7 +9,16 @@ type SEOProps = {
 };
 
 export default function SEO({ title, description, canonicalPath, schema = [] }: SEOProps) {
-  const canonical = `${site.domain}${canonicalPath}`;
+  const formatPath = (path: string) => {
+    if (!path || path === '/') return '/';
+    let clean = path.startsWith('/') ? path : `/${path}`;
+    if (!clean.endsWith('/')) {
+      clean = `${clean}/`;
+    }
+    return clean;
+  };
+
+  const canonical = `${site.domain}${formatPath(canonicalPath)}`;
   const baseSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -31,6 +40,7 @@ export default function SEO({ title, description, canonicalPath, schema = [] }: 
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="canonical" href={canonical} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
