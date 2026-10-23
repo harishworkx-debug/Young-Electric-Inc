@@ -131,3 +131,35 @@ export const reviewStats = {
   rating: 4.9,
   count: 47
 };
+
+export type Review = {
+  name: string;
+  date: string;
+  rating: number;
+  text: string;
+};
+
+const serviceReviewMap: Record<string, string[]> = {
+  'lighting-installation-boca-raton-fl': ['Marc Rosen', 'Kristin S'],
+  'ev-charger-installation-boca-raton-fl': ['Anand Narwani', 'Gabe R.'],
+  'outlet-repair-boca-raton-fl': ['bombdropper224', 'MB W'],
+  'switch-repair-boca-raton-fl': ['Katt', 'Debra Hill'],
+  'breaker-repair-boca-raton-fl': ['Salvatore Tosi', 'Ron Jarrell'],
+  'ceiling-fan-installation-boca-raton-fl': ['Michael R Rigolizzo', 'MB W'],
+  'electrical-panel-service-boca-raton-fl': ['Deborah Garcia', 'paul rasmussen'],
+  'residential-electrician-boca-raton-fl': ['Barbara Fuchs', 'Debra Hill'],
+  'emergency-electrician-boca-raton-fl': ['Emy Delmonaco', 'Salvatore Tosi'],
+  'electrical-troubleshooting-boca-raton-fl': ['Cindi Woodrum', 'J Carl Jean-Francois'],
+  'generator-installation-boca-raton-fl': ['Gabe R.', 'paul rasmussen'],
+  'residential-wiring-boca-raton-fl': ['Contessa', 'Salvatore Tosi'],
+  'surge-protection-boca-raton-fl': ['Ron Jarrell', 'Kristin S'],
+  'electrical-inspection-boca-raton-fl': ['Nancy Methot', 'Emy Delmonaco'],
+  'electrical-repair-boca-raton-fl': ['Debra Hill', 'MB W']
+};
+
+export function getReviewsForService(serviceSlug: string): Review[] {
+  const targetNames = (serviceReviewMap[serviceSlug] || ['Barbara Fuchs', 'Deborah Garcia']).map(n => n.toLowerCase());
+  const matched = reviews.filter((r) => targetNames.includes(r.name.toLowerCase()));
+  return matched.length > 0 ? matched : reviews.slice(0, 2);
+}
+

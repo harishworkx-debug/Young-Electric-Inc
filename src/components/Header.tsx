@@ -3,6 +3,7 @@ import { Phone, Zap, Menu, X, ChevronDown, MapPin } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { site, services, locations } from '@/data/siteData';
 import ServiceIcon from '@/components/ServiceIcon';
+import { trackPhoneCall } from '@/utils/analytics';
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -32,7 +33,11 @@ export default function Header() {
         <div className="bg-primary-700 text-white text-xs sm:text-sm py-1.5 px-4">
           <div className="container-page flex items-center justify-between">
             <p className="font-medium">Serving Boca Raton & South Florida Residential Homes</p>
-            <a href={site.phoneRaw} className="flex items-center gap-1.5 font-semibold hover:text-accent-300 transition-colors">
+            <a 
+              href={site.phoneRaw} 
+              onClick={() => trackPhoneCall('header_top_bar')}
+              className="flex items-center gap-1.5 font-semibold hover:text-accent-300 transition-colors"
+            >
               <Phone className="h-3.5 w-3.5" />
               {site.phone}
             </a>
@@ -47,7 +52,7 @@ export default function Header() {
               </div>
               <div>
                 <span className="block font-display font-bold text-lg lg:text-xl text-neutral-900 leading-tight">Young Electric Inc</span>
-                <span className="block text-xs text-neutral-500 leading-tight">Residential Electrical Connections</span>
+                <span className="block text-xs text-neutral-500 leading-tight">Licensed Residential Electrical Contractor</span>
               </div>
             </Link>
 
@@ -153,7 +158,11 @@ export default function Header() {
             </nav>
 
             <div className="hidden lg:flex items-center gap-3">
-              <a href={site.phoneRaw} className="btn-call">
+              <a 
+                href={site.phoneRaw} 
+                onClick={() => trackPhoneCall('header_desktop')}
+                className="btn-call"
+              >
                 <Phone className="h-4 w-4" />
                 Call Now
               </a>
@@ -259,7 +268,11 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <a href={site.phoneRaw} className="btn-call w-full mt-2">
+              <a 
+                href={site.phoneRaw} 
+                onClick={() => trackPhoneCall('header_mobile_menu')}
+                className="btn-call w-full mt-2"
+              >
                 <Phone className="h-4 w-4" />
                 Call {site.phone}
               </a>
@@ -268,14 +281,24 @@ export default function Header() {
         )}
       </header>
 
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-success-500 text-white shadow-2xl">
-        <a
-          href={site.phoneRaw}
-          className="flex items-center justify-center gap-2 py-4 font-bold text-base animate-pulse-glow"
-        >
-          <Phone className="h-5 w-5" fill="currentColor" />
-          Call Now: {site.phone}
-        </a>
+      <div className="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-primary-950/95 backdrop-blur-md border-t border-white/10 shadow-2xl p-2.5">
+        <div className="grid grid-cols-2 gap-2 max-w-sm mx-auto">
+          <a
+            href={site.phoneRaw}
+            onClick={() => trackPhoneCall('mobile_sticky_bottom_bar')}
+            aria-label={`Call Young Electric Inc at ${site.phone}`}
+            className="btn-call text-xs sm:text-sm py-3 justify-center shadow-md font-bold"
+          >
+            <Phone className="h-4 w-4" fill="currentColor" />
+            Call {site.phone}
+          </a>
+          <Link
+            to="/contact"
+            className="btn-accent text-xs sm:text-sm py-3 justify-center text-center shadow-md font-bold"
+          >
+            Get Quote
+          </Link>
+        </div>
       </div>
     </>
   );

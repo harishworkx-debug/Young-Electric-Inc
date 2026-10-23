@@ -22,13 +22,13 @@ content = content.replace(/metaTitle:\s*'([^']+)',[\s\S]*?shortTitle:\s*'([^']+)
 // For specific meta description for EV
 content = content.replace(
   /metaDescription: 'Need a home EV charging station.*?',/,
-  "metaDescription: 'Expert EV charger installation in Boca Raton, FL. Get your Level 2 home charging station installed safely by Young Electric Inc. Call (561) 470-1433.',"
+  "metaDescription: 'Expert EV charger installation in Boca Raton, FL. Get your Level 2 home charging station installed safely by Young Electric Inc. Call 561-363-0946.',"
 );
 
 // For electrical repair
 content = content.replace(
   /metaDescription: 'Fast and reliable home electrical repair.*?',/,
-  "metaDescription: 'Fast and reliable electrical repair in Boca Raton, FL. From tripping breakers to wiring issues, Young Electric Inc provides expert service. Call (561) 470-1433.',"
+  "metaDescription: 'Fast and reliable electrical repair in Boca Raton, FL. From tripping breakers to wiring issues, Young Electric Inc provides expert service. Call 561-363-0946.',"
 );
 
 fs.writeFileSync(filePath, content, 'utf-8');

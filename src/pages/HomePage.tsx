@@ -7,6 +7,7 @@ import ServiceAreasSection from '@/components/ServiceAreasSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import ServiceIcon from '@/components/ServiceIcon';
 import { site, services, locations, images, homeFaqs, localBusinessSchema } from '@/data/siteData';
+import { trackPhoneCall } from '@/utils/analytics';
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -42,8 +43,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Electrician in Boca Raton, FL | Young Electric Inc"
-        description="Young Electric Inc provides residential and electrical services in Boca Raton, FL and surrounding areas. Call 561-363-0946 for service."
+        title="Young Electric Inc | Residential Electrician in Boca Raton, FL"
+        description="Young Electric Inc is Boca Raton's trusted family-owned residential electrician. Master electricians Andy & Jake Young provide upfront flat pricing, 200A panels & EV chargers. Call 561-363-0946."
         canonicalPath="/"
         schema={[localBusinessSchema, faqSchema, serviceSchema]}
       />
@@ -72,14 +73,18 @@ export default function HomePage() {
               Boca Raton & South Florida
             </div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight">
-              Trusted <span className="text-accent-400">Electrician in Boca Raton, FL</span>
+              <span className="text-accent-400">Young Electric Inc</span> — Residential Electrician in Boca Raton
             </h1>
             <p className="text-lg lg:text-xl text-neutral-200 mb-8 leading-relaxed max-w-2xl">
-              Young Electric Inc is your top-rated electrical contractor in Boca Raton. Whether you need a residential electrician, a commercial electrician, or a 24/7 emergency electrician in Boca Raton, our expert team is ready to help.
+              Young Electric Inc is your top-rated residential electrical contractor in Boca Raton. Founded and operated by master electricians Andy and Jake Young, we provide reliable home repairs, 200A panel upgrades, EV chargers, and 24/7 emergency service.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
-              <a href={site.phoneRaw} className="btn-call text-lg px-8 py-4 w-full sm:w-auto">
+              <a 
+                href={site.phoneRaw} 
+                onClick={() => trackPhoneCall('home_hero')}
+                className="btn-call text-lg px-8 py-4 w-full sm:w-auto"
+              >
                 <Phone className="h-5 w-5" />
                 Call {site.phone}
               </a>
@@ -92,15 +97,15 @@ export default function HomePage() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
               <div className="flex items-center gap-2 text-neutral-200">
                 <Home className="h-5 w-5 text-accent-400" />
-                Residential & Commercial
+                Residential Specialists
               </div>
               <div className="flex items-center gap-2 text-neutral-200">
                 <Clock className="h-5 w-5 text-accent-400" />
-                Emergency Electrician
+                24/7 Emergency Service
               </div>
               <div className="flex items-center gap-2 text-neutral-200">
                 <ShieldCheck className="h-5 w-5 text-accent-400" />
-                No Obligation
+                Upfront Flat-Rate Pricing
               </div>
             </div>
           </div>
@@ -115,11 +120,13 @@ export default function HomePage() {
               <div className="flex items-center gap-1 text-accent-400">
                 {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5" fill="currentColor" />)}
               </div>
-              <p className="text-sm text-neutral-600 font-medium">User-Rated Service</p>
+              <Link to="/reviews" className="text-sm text-neutral-700 font-semibold hover:text-primary-600 transition-colors">
+                4.9 ★ (47 Google Reviews)
+              </Link>
             </div>
             <div className="flex flex-col items-center gap-1">
               <Zap className="h-6 w-6 text-primary-600" />
-              <p className="text-sm text-neutral-600 font-medium">Residential & Commercial</p>
+              <p className="text-sm text-neutral-600 font-medium">Residential Only</p>
             </div>
             <div className="flex flex-col items-center gap-1">
               <MapPin className="h-6 w-6 text-primary-600" />
@@ -127,7 +134,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col items-center gap-1">
               <Phone className="h-6 w-6 text-primary-600" />
-              <p className="text-sm text-neutral-600 font-medium">Direct Provider Connection</p>
+              <p className="text-sm text-neutral-600 font-medium">Owner on Every Job</p>
             </div>
           </div>
         </div>
@@ -140,26 +147,26 @@ export default function HomePage() {
             <div>
               <span className="text-sm font-bold uppercase tracking-wider text-primary-600">About Young Electric Inc</span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-                Expert Electrical Services in South Florida
+                Expert Residential Electricians in South Florida
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  Young Electric Inc is a premier electrical contractor serving South Florida communities. We provide professional, reliable, and high-quality electrical services. Our experienced team is ready to handle all your residential and commercial electrical needs.
+                  Young Electric Inc is a premier residential electrical contractor serving South Florida homeowners. Run by Andy and Jake Young, we provide professional, reliable, and code-compliant electrical craftsmanship. Our experienced team is ready to handle all your home electrical needs.
                 </p>
                 <p>
-                  Whether you need <Link to="/outlet-repair" className="text-primary-600 hover:underline">electrical repair in Boca Raton</Link>, a full <Link to="/electrical-panel-replacement" className="text-primary-600 hover:underline">electrical panel replacement in Boca Raton</Link>, an EV charger installed, or emergency assistance, one call connects you with a trusted local professional. If you are searching for an "electrician near me," we are your local experts.
+                  Whether you need <Link to="/electrical-repair-boca-raton-fl" className="text-primary-600 hover:underline">electrical repair in Boca Raton</Link>, a full <Link to="/electrical-panel-service-boca-raton-fl" className="text-primary-600 hover:underline">electrical panel replacement in Boca Raton</Link>, an EV charger installed, or emergency assistance, you work directly with our master electricians.
                 </p>
                 <p>
-                  We proudly serve Boca Raton and the greater South Florida area. No matter the size of the project—from small home repairs to complex commercial electrical jobs—we are here to help you find the right local team.
+                  We proudly serve Boca Raton and surrounding South Florida communities. No matter the size of the project—from a quick outlet repair to a complete 200-amp panel modernization—we provide dependable, licensed workmanship directly to your doorstep.
                 </p>
               </div>
 
               <div className="mt-8 space-y-3">
                 {[
-                  'Direct connection with expert in-house electricians',
-                  'Residential and commercial electrical services',
+                  'Direct service by licensed master electricians Andy & Jake',
+                  'Dedicated residential electrical services only',
                   'Fast response for emergency electrical needs',
-                  'Serving Boca Raton and surrounding South Florida',
+                  'Serving Boca Raton and surrounding South Florida communities',
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-success-500 flex-shrink-0" />
@@ -190,8 +197,8 @@ export default function HomePage() {
                     <ShieldCheck className="h-6 w-6 text-success-600" />
                   </div>
                   <div>
-                    <p className="font-bold text-neutral-900">Comprehensive Service</p>
-                    <p className="text-sm text-neutral-600">Residential, Commercial & Emergency</p>
+                    <p className="font-bold text-neutral-900">Residential Specialists</p>
+                    <p className="text-sm text-neutral-600">Home Repairs, Panels & EV Charging</p>
                   </div>
                 </div>
               </div>
@@ -205,9 +212,9 @@ export default function HomePage() {
         <div className="container-page">
           <div className="text-center mb-12">
             <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Our Services</span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Electrical Services in South Florida</h2>
+            <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">Residential Electrical Services</h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              We provide you with local electrical team members who handle a full range of residential and commercial electrical needs.
+              Our licensed master electricians handle a complete range of home electrical repairs, panel modernizations, and safety upgrades.
             </p>
           </div>
 
@@ -241,15 +248,15 @@ export default function HomePage() {
             <span className="text-sm font-bold uppercase tracking-wider text-primary-600">Simple Process</span>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900">How It Works</h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              Getting connected with a local residential electrical team is quick and straightforward.
+              Scheduling professional electrical service with Andy and Jake Young is straightforward:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: '1', title: 'Call Us', desc: 'Dial 561-363-0946 and tell us what residential electrical help you need.', icon: Phone },
-              { num: '2', title: 'Get Connected', desc: 'We provide you with an available expert in-house electrician.', icon: Zap },
-              { num: '3', title: 'Get Help', desc: 'Our team discusses your needs, gives you a quote, and schedules service if you choose.', icon: CheckCircle2 },
+              { num: '1', title: 'Call Us', desc: 'Dial 561-363-0946 and tell us about your electrical repair or project.', icon: Phone },
+              { num: '2', title: 'Direct Assessment', desc: 'Speak directly with master electricians Andy or Jake for upfront pricing.', icon: Zap },
+              { num: '3', title: 'Expert Service', desc: 'We complete the job cleanly, safely to code, and provide full warranty coverage.', icon: CheckCircle2 },
             ].map((step) => (
               <div key={step.num} className="text-center relative">
                 <div className="relative inline-flex">
@@ -267,6 +274,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Customer Testimonials & Reviews */}
+      <TestimonialSection />
 
       {/* CTA */}
       <CTASection />
@@ -291,17 +301,17 @@ export default function HomePage() {
             <div className="order-1 lg:order-2">
               <span className="text-sm font-bold uppercase tracking-wider text-primary-600">South Florida Electrical</span>
               <h2 className="mt-2 text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-                Home & Business Electrical Services in South Florida
+                Residential Electrical Specialists in South Florida
               </h2>
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
-                  South Florida properties range from mid-century homes to modern luxury estates and dynamic business facilities. These properties have diverse electrical needs — from updating older panels and wiring to installing the latest EV chargers and smart lighting systems.
+                  South Florida homes range from mid-century cottages in Delray Beach to modern luxury estates in Boca Raton and Parkland. These residences have unique electrical demands — from replacing obsolete panels to installing dedicated Level 2 EV chargers, surge protection, and storm-ready backup systems.
                 </p>
                 <p>
-                  Florida&apos;s climate adds unique challenges for electrical systems. Frequent thunderstorms create power surges that can damage electronics, hurricane season demands reliable backup power options, and high humidity affects outdoor wiring. A local electrical team understands these conditions and can recommend the right residential or commercial solutions.
+                  Florida&apos;s climate adds unique challenges for electrical systems. Frequent summer thunderstorms create high-voltage surges that destroy delicate electronics, hurricane season requires reliable generator backup power, and salt air rapidly corrodes outdoor meter enclosures. Our local electricians understand these conditions and install code-compliant, weather-resilient solutions.
                 </p>
                 <p>
-                  Whether you live in Boca Raton proper or nearby communities, connecting with a local electrical team ensures your property gets the attention it needs. We are equipped to handle routine electrical maintenance, emergency repairs, and large-scale installations.
+                  Whether you live in Boca Raton proper or surrounding communities in Palm Beach and Broward Counties, working with our licensed team ensures your home receives specialized attention, upfront pricing, and guaranteed safety.
                 </p>
               </div>
 
@@ -325,13 +335,13 @@ export default function HomePage() {
       {/* Testimonials */}
       <TestimonialSection />
 
-      {/* Lead-gen disclaimer callout */}
-      <section className="bg-warning-50 border-y border-warning-200">
+      {/* Guarantee disclaimer callout */}
+      <section className="bg-primary-50 border-y border-primary-100">
         <div className="container-page py-6">
           <div className="flex items-start gap-3">
-            <AlertCircle className="h-5 w-5 text-warning-600 flex-shrink-0 mt-0.5" />
+            <CheckCircle2 className="h-5 w-5 text-primary-600 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-neutral-700 leading-relaxed">
-              <strong>Professional Electrical Services:</strong> Young Electric Inc provides top-tier residential and commercial electrical services. We are a dedicated electrical contractor focused on safety, quality, and customer satisfaction. All work is performed by our skilled professionals to meet your needs.
+              <strong>Professional Electrical Services:</strong> Young Electric Inc provides top-tier residential electrical services. As a licensed, family-owned electrical contractor, we focus exclusively on homes, ensuring your property receives specialized care, safety, and guaranteed quality.
             </p>
           </div>
         </div>

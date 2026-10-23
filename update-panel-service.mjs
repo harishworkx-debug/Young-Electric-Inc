@@ -4,8 +4,8 @@ const filePath = './src/data/siteData.ts';
 let content = fs.readFileSync(filePath, 'utf-8');
 
 // 1. Update phone number
-content = content.replace(/phone: '561-363-0946'/, "phone: '(561) 470-1433'");
-content = content.replace(/phoneRaw: 'tel:5613630946'/, "phoneRaw: 'tel:5614701433'");
+content = content.replace(/phone: '561-363-0946'/, "phone: '561-363-0946'");
+content = content.replace(/phoneRaw: 'tel:5613630946'/, "phoneRaw: 'tel:5613630946'");
 
 // 2. Safely replace the electrical-panel-service-boca-raton-fl object.
 // Instead of a massive greedy regex, let's just find the start of the object
@@ -24,7 +24,7 @@ if (startIndex !== -1) {
     shortTitle: 'Electrical Panel Replacement',
     h1: 'Electrical Panel Replacement in Boca Raton, FL',
     metaTitle: 'Electrical Panel Replacement Boca Raton, FL | Upgrades & Repair',
-    metaDescription: 'Need an electrical panel upgrade or replacement in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call (561) 470-1433.',
+    metaDescription: 'Need an electrical panel upgrade or replacement in Boca Raton, FL? Hire a local residential electrical team for safe panel service. Call 561-363-0946.',
     heroImage: images.panelCloseup,
     heroImageAlt: 'Close-up of a residential electrical panel with circuit breakers in a Boca Raton, FL home',
     icon: 'LayoutGrid',
