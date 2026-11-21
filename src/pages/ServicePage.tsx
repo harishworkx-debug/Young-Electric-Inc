@@ -130,7 +130,7 @@ export default function ServicePage({ service }: { service: Service }) {
             alt={service.heroImageAlt}
             className="w-full h-full object-cover opacity-25"
             loading="eager"
-            fetchPriority="high"
+            {...({ fetchpriority: 'high' } as any)}
             width="1920"
             height="1080"
           />

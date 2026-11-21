@@ -135,7 +135,7 @@ export default function BlogPostPage() {
             alt={post.title} 
             className="w-full h-[380px] sm:h-[450px] object-cover rounded-2xl mb-12 shadow-lg"
             loading="eager"
-            fetchPriority="high"
+            {...({ fetchpriority: 'high' } as any)}
             width="1200"
             height="450"
           />

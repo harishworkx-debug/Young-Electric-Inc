@@ -1,6 +1,34 @@
 import fs from 'fs';
 import path from 'path';
 
+// Force production environment so React and React-Router load their production bundles
+process.env.NODE_ENV = 'production';
+
+// Filter out benign React SSR warnings (e.g. useLayoutEffect in React Router during SSG)
+const origConsoleError = console.error;
+console.error = (...args) => {
+  const msg = typeof args[0] === 'string' ? args[0] : '';
+  if (
+    msg.includes('useLayoutEffect does nothing on the server') ||
+    msg.includes('fetchPriority')
+  ) {
+    return;
+  }
+  origConsoleError(...args);
+};
+
+const origConsoleWarn = console.warn;
+console.warn = (...args) => {
+  const msg = typeof args[0] === 'string' ? args[0] : '';
+  if (
+    msg.includes('useLayoutEffect does nothing on the server') ||
+    msg.includes('fetchPriority')
+  ) {
+    return;
+  }
+  origConsoleWarn(...args);
+};
+
 async function prerender() {
   console.log('Starting SSG Pre-rendering for all sitemap routes...');
 

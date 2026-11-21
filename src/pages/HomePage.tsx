@@ -57,7 +57,7 @@ export default function HomePage() {
             alt="Residential electrician working on an electrical panel"
             className="w-full h-full object-cover opacity-30"
             loading="eager"
-            fetchPriority="high"
+            {...({ fetchpriority: 'high' } as any)}
             width="1920"
             height="1080"
           />

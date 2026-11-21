@@ -4,6 +4,11 @@ import { MemoryRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { AppContent } from './App';
 
+// React Router uses useLayoutEffect internally which is not supported during SSR in React 18.
+if (typeof window === 'undefined') {
+  React.useLayoutEffect = React.useEffect;
+}
+
 export function render(url: string) {
   const helmetContext: { helmet?: any } = {};
   const html = renderToString(
